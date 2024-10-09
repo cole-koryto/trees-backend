@@ -1,17 +1,20 @@
 import pandas as pd
-import os
 from sqlalchemy import create_engine
+import psycopg2
 
 
 def main():
-    csv_files = [file for file in os.listdir() if ".csv" in file]
 
-    overall_df = pd.DataFrame()
-    for file in csv_files:
-        overall_df = pd.concat([overall_df, pd.read_csv(file)])
+    overall_df = pd.read_csv("campustrees.csv")
 
-    engine = create_engine('postgresql://postgres:localpost17@localhost:5432/postgres')
-    overall_df.to_sql('trees', engine, index=False)
+    # Tries to connect to postgres database on default port if possible
+    try:
+        engine = create_engine('postgresql://postgres:localpost17@localhost:5432/postgres')
+        overall_df.to_sql('trees', engine, index=False)
+
+    except Exception as e:
+        engine = create_engine('postgresql://postgres:localpost17@localhost:5433/postgres')
+        overall_df.to_sql('trees', engine, index=False)
 
 
 if __name__ == "__main__":
