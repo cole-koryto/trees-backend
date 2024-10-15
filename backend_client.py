@@ -3,7 +3,7 @@ from schemas.table_schemas import TreeInfo
 from config import *
 from typing import Annotated
 from fastapi import Depends, FastAPI, Query
-from sqlmodel import Field, Session, SQLModel, create_engine, select
+from sqlmodel import Session, create_engine, select
 
 
 # Creates new database session
