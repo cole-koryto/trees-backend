@@ -1,5 +1,5 @@
 from schemas.input_schemas import TreeInputPayload
-from schemas.table_schemas import TreeInfo
+from schemas.table_schemas import TreeInfo, TreeHistory
 from config import *
 from typing import Annotated
 from fastapi import Depends, FastAPI, Query
@@ -22,3 +22,9 @@ app = FastAPI()
 def get_tree_info(session: SessionDep,) -> list[TreeInfo]:
     info = session.exec(select(TreeInfo))
     return info
+
+
+@app.get("/treehistory")
+def get_tree_history(session: SessionDep,) -> list[TreeHistory]:
+    history = session.exec(select(TreeHistory))
+    return history
