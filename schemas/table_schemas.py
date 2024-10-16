@@ -1,7 +1,8 @@
 from sqlmodel import Field, SQLModel
 
 class TreeInfo(SQLModel, table=True):
-    Tag_Number: int | None = Field(default=None, index=True, primary_key=True)
+    Tree_ID: int = Field(default=None, index=True, primary_key=True)
+    Tag_Number: int | None = Field(default=None, index=True)
     Species_Co: str | None
     Latin_Name: str | None
     Species_1: str | None
