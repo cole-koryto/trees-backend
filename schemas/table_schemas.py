@@ -15,7 +15,7 @@ class TreeInfo(SQLModel, table=True):
 
 class TreeHistory(SQLModel, table=True):
     Hist_ID: int | None = Field(default=None, index=True, primary_key=True)
-    Tree_ID: int = Field(index=True, foreign_key=False) # TODO make foreign_key=True
+    Tree_ID: int = Field(index=True, foreign_key="treeinfo.Tree_ID")
     Tag_Number: int | None = Field(default=None, index=True)
     Hazard_Rat: str | None
     DBH: float | None
