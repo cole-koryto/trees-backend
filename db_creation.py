@@ -20,15 +20,15 @@ def main():
         engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:5432/{LOCAL_DB_NAME}", echo=True)
         SQLModel.metadata.drop_all(engine)
         SQLModel.metadata.create_all(engine)
-        tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
+        tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
 
     except Exception as e:
         engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:5433/{LOCAL_DB_NAME}", echo=True)
         SQLModel.metadata.drop_all(engine)
         SQLModel.metadata.create_all(engine)
-        tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
+        tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
 
 
 if __name__ == "__main__":
