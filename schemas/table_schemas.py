@@ -21,3 +21,10 @@ class TreeHistory(SQLModel, table=True):
     DBH: float | None
     Notes: str | None
     Year: int
+
+class Users(SQLModel, table=True):
+    User_ID: int | None = Field(default=None, index=True, primary_key=True)
+    username: str
+    email: str | None = None
+    Full_Name: str
+    hashed_password: str

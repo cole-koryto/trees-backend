@@ -1,5 +1,4 @@
 import pandas as pd
-# from sqlalchemy import create_engine
 from config import *
 import psycopg2
 from schemas.table_schemas import TreeInfo, TreeHistory
