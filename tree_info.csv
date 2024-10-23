@@ -1,803 +1,803 @@
-Tree_ID,Tag_Number,Species_Co,Latin_Name,Species_1,Azimuth,Dist_to_Bu,Buil_Vinta,Sun,X,Y
-0,1070,PLOC,Platanus occidentalis,American Sycamore,180,21,,Sun,-85.6009209,42.29159749
-1,1071,PLOC,Platanus occidentalis,American Sycamore,180,21,,Sun,-85.60092119,42.29142676
-2,1072,PLOC,Platanus occidentalis,American Sycamore,180,21,,Sun,-85.60093384,42.29132185
-3,1073,PLOC,Platanus occidentalis,American Sycamore,360,21,,Sun,-85.60095127,42.29120757
-4,1086,MA33,Malus spp.,Crab Apple,270,4,1950-1980,Partial,-85.60083271,42.29107917
-5,1090,COKO,Cornus kousa,Kousa Dogwood,270,4,1950-1980,Sun,-85.60089238,42.29101963
-6,1092,COKO,Cornus kousa,Kousa Dogwood,270,4,1950-1980,Partial,-85.60089506,42.29088472
-7,1093,MA34,Malus spp.,Crab Apple,270,4,1950-1980,Partial,-85.60087732,42.2908223
-8,1094,CRDO,Crataegus douglasii,Black Hawthorne,270,4,1950-1980,Partial,-85.60082409,42.29081206
-9,1095,QUAL,Quercus alba,White Oak,270,10,1950-1980,Sun,-85.60096583,42.29069828
-10,1096,AEGL,Aesculus glabra,Ohio Buckeye,270,21,,Sun,-85.60101457,42.29053543
-11,1135,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.60086557,42.29044297
-12,,,,,,,,,-85.60069805,42.29043523
-13,,,,,,,,,-85.60058704,42.29044053
-14,1097,QUAL,Quercus alba,White Oak,180,10,1950-1980,Sun,-85.6007166,42.2905845
-15,1099,MA35,Malus spp.,Crab Apple,180,10,1950-1980,Partial,-85.60056885,42.29059829
-16,1098,CRDO,Crataegus douglasii,Black Hawthorne,180,4,1950-1980,Partial,-85.60057257,42.290632
-17,1100,MA36,Malus spp.,Crab Apple,180,10,1950-1980,Partial,-85.60046908,42.2905901
-18,1101,MA37,Malus spp.,Crab Apple,180,10,1950-1980,Partial,-85.60041219,42.29059838
-19,1134,ACSA6,Acer saccharum,Sugar Maple,180,10,1950-1980,Partial,-85.60008272,42.29060037
-20,1127,ACSA5,Acer saccharum,Sugar Maple,180,10,1950-1980,Partial,-85.60011542,42.29062516
-21,1126,PRSE17,Prunus serotina,Black Cherry,90,10,1950-1980,Partial,-85.60010092,42.29071244
-22,1133,ROPS,Robinia pseudoacacia,Black Locust,270,21,,Partial,-85.60001442,42.29062236
-23,1131,FAGR,Fagus grandifolia,American Beech,270,15,Before 1950,Partial,-85.59997904,42.29057948
-24,1132,ROPS,Robinia pseudoacacia,Black Locust,270,15,Before 1950,Partial,-85.5999405,42.29060744
-25,1130,ACPL,Acer platanoides,Norway Maple,180,21,,Sun,-85.59998109,42.29045429
-26,1085,PYCA,Pyrus calleryana,Callery Pear,270,4,1950-1980,Sun,-85.60017361,42.29144972
-27,1084,CRDO,Crataegus douglasii,Black Hawthorne,360,10,1950-1980,Partial,-85.60031045,42.29134376
-28,1083,CRDO,Crataegus douglasii,Black Hawthorne,360,10,1950-1980,Partial,-85.60037402,42.29133868
-29,1080,PIST,Pinus strobus,Eastern White Pine,360,10,1950-1980,Partial,-85.60041304,42.29134368
-30,1081,PIST,Pinus strobus,Eastern White Pine,360,10,1950-1980,Partial,-85.60038842,42.29135679
-31,1079,PIST,Pinus strobus,Eastern White Pine,360,15,1950-1980,Partial,-85.60041409,42.29136967
-32,1082,PIST,Pinus strobus,Eastern White Pine,360,10,1950-1980,Partial,-85.60036281,42.29137422
-33,1078,PIST,Pinus strobus,Eastern White Pine,360,15,1950-1980,Partial,-85.600391,42.29138837
-34,1077,PIST,Pinus strobus,Eastern White Pine,360,15,1950-1980,Partial,-85.60040666,42.29139648
-35,1076,PIST,Pinus strobus,Eastern White Pine,360,15,1950-1980,Partial,-85.60043896,42.29139964
-36,1075,PIST,Pinus strobus,Eastern White Pine,360,15,1950-1980,Partial,-85.60041936,42.29142864
-37,1002,GLTR,Gleditsia triacanthos,Honeylocust,180,10,After 1980,Partial,-85.6005187,42.29162014
-38,1001,PYCA,Pyrus calleryana,Callery Pear,180,4,After 1980,Partial,-85.60053481,42.29169707
-39,1003,GLTR,Gleditsia triacanthos,Honeylocust,180,10,After 1980,Partial,-85.60058953,42.29164449
-40,1004,GLTR,Gleditsia triacanthos,Honeylocust,180,15,After 1980,Partial,-85.60064502,42.29164655
-41,1005,GLTR,Gleditsia triacanthos,Honeylocust,180,15,After 1980,Partial,-85.60072815,42.29166187
-42,1006,GLTR,Gleditsia triacanthos,Honeylocust,180,21,,Partial,-85.60081605,42.29166237
-43,1007,BEPA,Betula papyrifera,Paper Birch,270,10,After 1980,Sun,-85.60076692,42.29184098
-44,1008,MA30,Malus spp.,Crab Apple,270,4,After 1980,Partial,-85.60076787,42.29193744
-45,1011,COKO,Cornus kousa,Kousa Dogwood,270,4,After 1980,Partial,-85.60066432,42.29205998
-46,1012,PRSU,Prunus subhirtella,Weeping Cherry,270,10,After 1980,Partial,-85.60065258,42.29209881
-47,1013,FASY,Fagus sylvatica,European Beech,270,10,After 1980,Sun,-85.60065677,42.29216066
-48,1014,MA31,Malus spp.,Crab Apple,360,21,,Sun,-85.60007196,42.29219602
-49,1019,MA32,Malus spp.,Crab Apple,360,21,,Sun,-85.59987742,42.29218561
-50,,,,,,,,,-85.6014053,42.29148664
-51,376,ACPL,Acer platanoides,Norway Maple,360,10,Before 1950,Partial,-85.60143225,42.29146514
-52,375,ACPL,Acer platanoides,Norway Maple,360,10,Before 1950,Partial,-85.60146406,42.29145704
-53,385,PIAB,Picea abies,Norway Spruce,90,4,Before 1950,Partial,-85.60139719,42.29139683
-54,388,QURU,Quercus rubra,Northern Red Oak,90,15,Before 1950,Partial,-85.60127582,42.29130963
-55,388,QURU,Quercus rubra,Northern Red Oak,90,15,Before 1950,Partial,-85.60129954,42.29121845
-56,389,PIAB,Picea abies,Norway Spruce,90,15,Before 1950,Partial,-85.60131292,42.29115316
-57,387,COKO,Cornus kousa,Kousa Dogwood,90,4,Before 1950,Sun,-85.60141271,42.29121342
-58,390,PINI,Pinus nigra,Austrian Pine,180,4,Before 1950,Sun,-85.60149753,42.29113523
-59,360,PIAB,Picea abies,Norway Spruce,360,15,1950-1980,Partial,-85.60162126,42.29105572
-60,357,PIAB,Picea abies,Norway Spruce,360,15,1950-1980,Partial,-85.60154631,42.29104882
-61,356,TABA,Taxus baccata,English Yew,360,15,1950-1980,Partial,-85.60148327,42.29104216
-62,355,PIAB,Picea abies,Norway Spruce,360,15,1950-1980,Partial,-85.60135098,42.29104857
-63,354,PIAB,Picea abies,Norway Spruce,360,15,1950-1980,Partial,-85.60132738,42.29104322
-64,353,PSME,Pseudotsuga menziesii,Douglas-fir,360,15,1950-1980,Partial,-85.60128792,42.29103924
-65,1141,PLOC,Platanus occidentalis,American Sycamore,90,21,,Sun,-85.6011498,42.29097015
-66,1142,PYCA,Pyrus calleryana,Callery Pear,90,15,1950-1980,Sun,-85.60119424,42.29075415
-67,1143,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60140993,42.29081952
-68,1144,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60129697,42.29076469
-69,1145,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60128023,42.29073167
-70,1148,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60121736,42.29063154
-71,1147,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60130941,42.2906343
-72,1148,CRDO,Crataegus douglasii,Black Hawthorne,90,4,1950-1980,Partial,-85.60138745,42.29060642
-73,1149,ACPL,Acer platanoides,Norway Maple,180,10,1950-1980,Sun,-85.60143289,42.29043383
-74,1151,GIBI,Ginkgo biloba,Ginkgo,180,10,1950-1980,Sun,-85.60184646,42.29044404
-75,1152,GIBI,Ginkgo biloba,Ginkgo,270,10,1950-1980,Sun,-85.60194268,42.2904465
-76,,,,,,,,,-85.60207272,42.29043159
-77,,,,,,,,,-85.60222718,42.29042525
-78,1173,ACPL,Acer platanoides,Norway Maple,270,21,,Partial,-85.6024127,42.2904211
-79,1172,ACPL,Acer platanoides,Norway Maple,270,21,,Partial,-85.60249991,42.29042427
-80,1104,SYRE,Syringa reticulata,Japanese Lilac,180,4,1950-1980,Partial,-85.60042624,42.29061188
-81,1105,SYRE,Syringa reticulata,Japanese Lilac,180,4,1950-1980,Shade,-85.60038467,42.29063836
-82,1106,SYRE,Syringa reticulata,Japanese Lilac,180,4,1950-1980,Partial,-85.60034466,42.29064651
-83,1107,SYRE,Syringa reticulata,Japanese Lilac,180,4,1950-1980,Partial,-85.60031229,42.29064792
-84,1115,PINI,Pinus nigra,Austrian Pine,90,10,1950-1980,Partial,-85.60008269,42.29092004
-85,1120,PINI,Pinus nigra,Austrian Pine,270,4,Before 1950,Partial,-85.60000886,42.29089666
-86,1121,ROPS,Robinia pseudoacacia,Black Locust,270,4,Before 1950,Partial,-85.60001278,42.2908229
-87,1122,ULAM,Ulmus americana,American Elm,360,10,Before 1950,Partial,-85.60001173,42.29080866
-88,1123,ROPS,Robinia pseudoacacia,Black Locust,360,10,Before 1950,Partial,-85.59996859,42.29081559
-89,1125,ULAM,Ulmus americana,American Elm,360,4,Before 1950,Partial,-85.59997278,42.29084354
-90,1119,ULAM,Ulmus americana,American Elm,270,4,Before 1950,Partial,-85.60000099,42.29091206
-91,1118,ROPS,Robinia pseudoacacia,Black Locust,270,4,Before 1950,Partial,-85.59261183,42.29093534
-92,1117,ROPS,Robinia pseudoacacia,Black Locust,270,4,Before 1950,Partial,-85.6000037,42.29094257
-93,1124,ACPL,Acer platanoides,Norway Maple,360,4,Before 1950,Partial,-85.59992681,42.29084813
-94,1224,GLTR,Gleditsia triacanthos,Honeylocust,270,4,Before 1950,Shade,-85.59976659,42.29060275
-95,1190,PYCA,Pyrus calleryana,Callery Pear,270,15,Before 1950,Partial,-85.59980727,42.2905223
-96,,,,,,,,,-85.59970355,42.29047852
-97,,,,,,,,,-85.59968953,42.29048482
-98,,,,,,,,,-85.59965325,42.29048065
-99,,,,,,,,,-85.59952282,42.29049316
-100,,,,,,,,,-85.5995036,42.29048862
-101,1196,FASY,Fagus sylvatica,European Beech,90,4,Before 1950,Sun,-85.59937577,42.29065034
-102,1219,QUAL,Quercus alba,White Oak,90,21,Before 1950,Sun,-85.59914594,42.29057734
-103,1218,PIST,Pinus strobus,Eastern White Pine,90,21,Before 1950,Partial,-85.59917037,42.29077209
-104,1217,PIST,Pinus strobus,Eastern White Pine,360,15,Before 1950,Partial,-85.59927795,42.29079326
-105,1225,ACRU,Acer rubrum,Red Maple,360,10,Before 1950,Sun,-85.59956547,42.29082495
-106,,,,,,,,,-85.59967423,42.29094769
-107,1228,ACSA7,Acer saccharum,Sugar Maple,90,21,,Partial,-85.59956699,42.29094248
-108,1229,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.59947517,42.29092416
-109,1232,GLTR,Gleditsia triacanthos,Honeylocust,90,21,,Partial,-85.59943736,42.29123579
-110,1230,GLTR,Gleditsia triacanthos,Honeylocust,90,21,,Partial,-85.59949765,42.29130787
-111,1231,GLTR,Gleditsia triacanthos,Honeylocust,90,21,,Partial,-85.59941432,42.29128886
-112,607,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60223295,42.29000363
-113,610,ACPL,Acer platanoides,Norway Maple,270,15,1950-1980,Partial,-85.60226941,42.28996448
-114,608,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60230056,42.28997106
-115,609,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60238936,42.29000575
-116,612,PINI,Pinus nigra,Austrian Pine,90,15,Before 1950,Partial,-85.60235904,42.2899577
-117,615,MA3,Malus spp.,Crab Apple,90,10,Before 1950,Partial,-85.60247749,42.28994793
-118,616,CRDO,Crataegus douglasii,Black Hawthorn,90,4,Before 1950,Partial,-85.60247715,42.28987577
-119,617,,,,,,,,-85.60250122,42.28969825
-120,631,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60225832,42.28985453
-121,630,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60230104,42.28976034
-122,629,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60231278,42.28969882
-123,628,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60228391,42.28969246
-124,626,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60229161,42.28964005
-125,625,PIST,Pinus strobus,Eastern White Pine,90,15,Before 1950,Partial,-85.60233311,42.28964913
-126,624,PIST,Pinus strobus,Eastern White Pine,90,15,Before 1950,Partial,-85.60233003,42.28960048
-127,618,THOC,Thuja occidentalis,Northern White Cedar,90,4,Before 1950,Partial,-85.60248832,42.28949653
-128,619,PYCA,Pyrus calleryana,Callery Pear,270,4,1950-1980,Sun,-85.60253914,42.28941706
-129,621,QUAL,Quercus alba,White Oak,360,15,1950-1980,Partial,-85.60227075,42.2894912
-130,622,QUAL,Quercus alba,White Oak,360,15,1950-1980,Partial,-85.60228759,42.28952801
-131,623,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60219051,42.28955836
-132,627,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60218528,42.289624
-133,634,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60215381,42.28969671
-134,635,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60204605,42.28965441
-135,636,QUAL,Quercus alba,White Oak,90,21,,Partial,-85.60203419,42.289738
-136,633,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60210837,42.2897988
-137,632,LITU,Liriodendron tulipifera,Tuliptree,270,15,1950-1980,Partial,-85.60215511,42.28988693
-138,637,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60203061,42.28981968
-139,639,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.6019071,42.28984247
-140,,,,,,,,,-85.60187235,42.28980137
-141,640,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60180704,42.28986754
-142,641,CAOV,Carya ovata,Shagbark Hickory,180,10,1950-1980,Partial,-85.60175061,42.28987952
-143,642,PRSU,Prunus subhirtella,Weeping Cherry,180,10,1950-1980,Partial,-85.60168369,42.28988235
-144,643,MA4,Malus spp.,Crab Apple,180,4,1950-1980,Partial,-85.60166377,42.28994709
-145,650,QURU,Quercus rubra,Red Oak,360,10,Before 1950,Partial,-85.60168325,42.28978456
-146,644,COKO,Cornus kousa,Kousa Dogwood,180,15,1950-1980,Shade,-85.60158938,42.28982265
-147,645,QURU,Quercus rubra,Red Oak,180,15,1950-1980,Partial,-85.60152625,42.28984977
-148,648,QUAL,Quercus alba,White Oak,360,10,Before 1950,Partial,-85.60145435,42.28974952
-149,647,PSME,Pseudotsuga menziesii,Douglas-fir,360,10,Before 1950,Partial,-85.6013971,42.28979413
-150,646,QUAL,Quercus alba,White Oak,180,15,Before 1950,Partial,-85.60134431,42.28986598
-151,651,MA5,Malus spp.,Crab Apple,270,4,Before 1950,Partial,-85.60133531,42.28997572
-152,688,MA12,Malus spp.,Crab Apple,270,4,Before 1950,Partial,-85.601906,42.28958229
-153,,,,,,,,,-85.60184919,42.28954159
-154,689,MEGL,Metasequoia glyptostroboides,Dawn Redwood,270,15,Before 1950,Partial,-85.60190985,42.28950454
-155,687,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60203703,42.28953281
-156,686,QURU,Quercus rubra,Red Oak,360,10,1950-1980,Partial,-85.60214655,42.28946403
-157,684,PRSE13,Prunus serotina,Black Cherry,360,4,1950-1980,Partial,-85.60223952,42.28940998
-158,685,PRSE14,Prunus serotina,Black Cherry,360,4,1950-1980,Shade,-85.60220222,42.28940318
-159,692,QUAL,Quercus alba,White Oak,90,4,1950-1980,Partial,-85.60210059,42.28934922
-160,693,QUAL,Quercus alba,White Oak,90,10,1950-1980,Partial,-85.60203444,42.28935723
-161,691,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60195188,42.28941033
-162,710,PIPU,Picea pungens,Blue Spruce,90,4,1950-1980,Partial,-85.60213731,42.2892457
-163,711,CEOC,Celtis occidentalis,Northern Hackberry,90,15,1950-1980,Partial,-85.60223722,42.28909995
-164,712,QUAL,Quercus alba,White Oak,90,15,1950-1980,Partial,-85.6021574,42.28911258
-165,720,QUAL,Quercus alba,White Oak,90,15,1950-1980,Partial,-85.60209778,42.28921203
-166,719,QURU,Quercus rubra,Red Oak,90,15,1950-1980,Partial,-85.60206618,42.28919199
-167,709,QURU,Quercus rubra,Red Oak,90,15,1950-1980,Partial,-85.60204352,42.28924453
-168,708,QURU,Quercus rubra,Red Oak,90,15,1950-1980,Partial,-85.60202074,42.28922608
-169,704,QURU,Quercus rubra,Red Oak,90,15,1950-1980,Partial,-85.60201215,42.28928367
-170,705,CAOV,Carya ovata,Shagbark Hickory,90,15,1950-1980,Partial,-85.60202076,42.28929385
-171,707,CAOV,Carya ovata,Shagbark Hickory,90,21,,Partial,-85.60197921,42.28926285
-172,706,QUAL,Quercus alba,White Oak,90,21,,Partial,-85.60189981,42.28932616
-173,717,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60202582,42.28916562
-174,718,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.6020212,42.28917673
-175,714,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.6019621,42.28911263
-176,715,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60190726,42.28910968
-177,718,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60187375,42.28910298
-178,733,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60192627,42.28919201
-179,732,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.6019048,42.28918931
-180,731,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60179701,42.28913424
-181,730,CAOV,Carya ovata,Shagbark Hickory,270,21,,Partial,-85.60183841,42.28922225
-182,729,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60180817,42.28920687
-183,728,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60178775,42.28918227
-184,727,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60172197,42.28915577
-185,726,CAOV,Carya ovata,Shagbark Hickory,270,21,,Partial,-85.60167931,42.28918772
-186,725,CAOV,Carya ovata,Shagbark Hickory,270,21,,Partial,-85.60172473,42.28919008
-187,724,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60174431,42.28923651
-188,723,CAOV,Carya ovata,Shagbark Hickory,270,21,,Partial,-85.60169346,42.28924359
-189,722,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60172903,42.28927229
-190,721,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60177443,42.28925195
-191,694,FAGR,Fagus grandifolia,American Beech,180,15,Before 1950,Partial,-85.60169822,42.28936556
-192,695,QUAL,Quercus alba,White Oak,180,21,,Partial,-85.60158371,42.28936537
-193,696,QURU,Quercus rubra,Red Oak,180,10,Before 1950,Shade,-85.60148103,42.28938423
-194,697,MA13,Malus spp.,Crab Apple,180,4,Before 1950,Partial,-85.60146753,42.28944618
-195,699,QUAL,Quercus alba,White Oak,360,15,1950-1980,Sun,-85.60132896,42.28933859
-196,,,,,,,,,-85.60175036,42.28908774
-197,737,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60165196,42.28912653
-198,736,PRSU,Prunus subhirtella,Weeping Cherry,270,10,1950-1980,Partial,-85.60149858,42.28908595
-199,735,QURU,Quercus rubra,Red Oak,270,10,1950-1980,Partial,-85.60151471,42.28915266
-200,734,QURU,Quercus rubra,Red Oak,270,10,1950-1980,Partial,-85.60153307,42.28922788
-201,698,COKO,Cornus kousa,Kousa Dogwood,360,4,1950-1980,Partial,-85.60138027,42.28925371
-202,700,PYCA,Pyrus calleryana,Callery Pear,180,4,Before 1950,Partial,-85.60136672,42.28944413
-203,711,CEOC,Celtis occidentalis,Northern Hackberry,90,15,1950-1980,Partial,-85.60136052,42.28954649
-204,702,MA15,Malus spp.,Crab Apple,90,4,Before 1950,Partial,-85.60142844,42.28973651
-205,782,QUIM,Quercus imbricaria,Shingle Oak,90,15,Before 1950,Partial,-85.60123352,42.2898117
-206,783,QUMA1,Quercus macrocarpa,Bur Oak,180,10,Before 1950,Partial,-85.60114515,42.28988066
-207,763,ACPA,Acer palmatum,Japanese Maple,180,4,Before 1950,Partial,-85.60120943,42.28995964
-208,789,QURU,Quercus rubra,Red Oak,180,15,Before 1950,Partial,-85.60097548,42.28983993
-209,788,QUMA2,Quercus macrocarpa,Bur Oak,180,10,Before 1950,Partial,-85.60088208,42.2898916
-210,762,MA21,Malus spp.,Crab Apple,180,4,Before 1950,Partial,-85.60085534,42.28999127
-211,761,MA20,Malus spp.,Crab Apple,180,4,Before 1950,Partial,-85.60081548,42.28995643
-212,785,QURU,Quercus rubra,Red Oak,90,21,,Partial,-85.60102986,42.28969599
-213,775,FAGR,Fagus grandifolia,American Beech,90,15,Before 1950,Partial,-85.60117794,42.28949399
-214,774,QUAL,Quercus alba,White Oak,360,15,1950-1980,Partial,-85.60114612,42.28939559
-215,772,QURU,Quercus rubra,Red Oak,360,10,1950-1980,Partial,-85.60105642,42.2893433
-216,777,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60099956,42.28943375
-217,771,QURU,Quercus rubra,Red Oak,360,10,1950-1980,Partial,-85.60083972,42.28934671
-218,780,QURU,Quercus rubra,Red Oak,360,15,1950-1980,Partial,-85.60068635,42.28940749
-219,779,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60075342,42.28952368
-220,778,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60082403,42.28949348
-221,781,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60091106,42.28953996
-222,776,QUAL,Quercus alba,White Oak,90,21,,Partial,-85.60105997,42.28950706
-223,786,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.60092553,42.28963615
-224,787,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.60074737,42.28970641
-225,790,FAGR,Fagus grandifolia,American Beech,180,15,Before 1950,Partial,-85.60074089,42.28982701
-226,760,QUAL,Quercus alba,White Oak,180,4,Before 1950,Partial,-85.60066467,42.2899488
-227,791,QUAL,Quercus alba,White Oak,180,15,Before 1950,Partial,-85.60060547,42.28985778
-228,792,QUPA,Quercus palustris,Pin Oak,180,21,,Partial,-85.60058296,42.28975522
-229,793,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60065319,42.28963168
-230,796,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60046689,42.28988452
-231,797,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60040449,42.28986362
-232,795,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60048496,42.28985654
-233,794,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.60046602,42.28977598
-234,813,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.60027818,42.28978115
-235,812,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.60036845,42.28969578
-236,993,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60047934,42.28959527
-237,802,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60052122,42.28945365
-238,801,QUMA3,Quercus macrocarpa,Bur Oak,360,10,1950-1980,Partial,-85.6004587,42.28932883
-239,764,MA22,Malus spp.,Crab Apple,360,4,1950-1980,Partial,-85.60041926,42.28928304
-240,765,MA23,Malus spp.,Crab Apple,360,4,1950-1980,Partial,-85.60034134,42.28933479
-241,766,MA24,Malus spp.,Crab Apple,360,4,1950-1980,Partial,-85.60019549,42.28928512
-242,767,MA25,Malus spp.,Crab Apple,360,4,1950-1980,Partial,-85.60015583,42.28928006
-243,809,QURU,Quercus rubra,Red Oak,360,10,1950-1980,Partial,-85.60017552,42.28931533
-244,810,QURU,Quercus rubra,Red Oak,360,15,1950-1980,Partial,-85.60030888,42.28935699
-245,803,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60038214,42.28945824
-246,804,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60032145,42.28949649
-247,803,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60013575,42.28938577
-248,807,QURU,Quercus rubra,Red Oak,360,15,1950-1980,Partial,-85.59997522,42.28937951
-249,768,PYCA,Pyrus calleryana,Callery Pear,90,4,1950-1980,Sun,-85.60000082,42.28924304
-250,806,PYCA,Pyrus calleryana,Callery Pear,180,15,Before 1950,Sun,-85.59978663,42.28932652
-251,805,QURU,Quercus rubra,Red Oak,180,21,,Sun,-85.59976092,42.28945742
-252,816,QURU,Quercus rubra,Red Oak,180,21,,Partial,-85.6000343,42.28973049
-253,814,QURU,Quercus rubra,Red Oak,180,15,Before 1950,Partial,-85.52880881,42.28981386
-254,815,QURU,Quercus rubra,Red Oak,270,21,,Sun,-85.59983081,42.28975007
-255,820,PYCA,Pyrus calleryana,Callery Pear,270,4,Before 1950,Partial,-85.59967988,42.28979821
-256,817,MA26,Malus spp.,Crab Apple,180,4,Before 1950,Partial,-85.59951947,42.28933124
-257,992,PINI,Pinus nigra,Austrian Pine,180,15,,Partial,-85.59957696,42.28918301
-258,991,QUAL,Quercus alba,White Oak,180,15,,Partial,-85.59945301,42.2892147
-259,854,QUAL,Quercus alba,White Oak,360,4,Before 1950,Sun,-85.59931178,42.28955138
-260,846,QUPA,Quercus palustris,Pin Oak,90,15,Before 1950,Partial,-85.59923814,42.28964503
-261,845,QUIM,Quercus imbricaria,Shingle Oak,90,21,Before 1950,Sun,-85.59911322,42.28968965
-262,847,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.59916649,42.28975523
-263,844,QUAL,Quercus alba,White Oak,180,15,Before 1950,Partial,-85.59906912,42.28974876
-264,843,PSME,Pseudotsuga menziesii,Douglas-fir,180,10,Before 1950,Partial,-85.59904223,42.2898396
-265,851,PSME,Pseudotsuga menziesii,Douglas-fir,270,10,Before 1950,Partial,-85.59909583,42.28994799
-266,850,QUAL,Quercus alba,White Oak,180,15,Before 1950,Partial,-85.59922948,42.28986403
-267,849,QUAL,Quercus alba,White Oak,90,10,Before 1950,Sun,-85.59929703,42.28983482
-268,848,PRSE15,Prunus serotina,Black Cherry,90,4,Before 1950,Partial,-85.59924998,42.28978273
-269,,,,,,,,,-85.59926565,42.28976409
-270,308,QUAL,Quercus alba,White Oak,270,15,After 1980,Sun,-85.60403815,42.28989371
-271,307,ROPS,Robinia pseudoacacia,Black Locust,270,10,Before 1950,Sun,-85.60416691,42.28958637
-272,306,CAOV,Carya ovata,Shagbark Hickory,270,10,Before 1950,Partial,-85.60407008,42.28938587
-273,305,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60414717,42.28928132
-274,304,QUAL,Quercus alba,White Oak,270,4,Before 1950,Partial,-85.60409052,42.28931031
-275,303,QURU,Quercus rubra,Northern Red Oak,270,4,Before 1950,Partial,-85.60407848,42.28927289
-276,302,QUAL,Quercus alba,White Oak,270,4,Before 1950,Partial,-85.60408663,42.28926137
-277,301,ROPS,Robinia pseudoacacia,Black Locust,270,4,Before 1950,Partial,-85.60406613,42.28923226
-278,300,ROPS,Robinia pseudoacacia,Black Locust,270,4,Before 1950,Partial,-85.60408013,42.28922132
-279,299,QURU,Quercus rubra,Northern Red Oak,270,15,Before 1950,Partial,-85.60412271,42.28919097
-280,290,ACPL,Acer platanoides,Norway Maple,270,21,,Partial,-85.60414343,42.28916595
-281,291,QURU,Quercus rubra,Northern Red Oak,270,21,,Partial,-85.60413093,42.2891427
-282,,,,,,,,,-85.60411002,42.28914151
-283,288,CAOV,Carya ovata,Shagbark Hickory,270,15,Before 1950,Partial,-85.60406996,42.28913391
-284,292,ROPS,Robinia pseudoacacia,Black Locust,270,15,Before 1950,Partial,-85.60412366,42.2891051
-285,285,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60403517,42.2891398
-286,284,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60400089,42.28907251
-287,286,QURU,Quercus rubra,Northern Red Oak,270,10,Before 1950,Partial,-85.6040494,42.28905883
-288,287,PIST,Pinus strobus,Eastern White Pine,270,10,Before 1950,Partial,-85.60405307,42.28908738
-289,294,QUAL,Quercus alba,White Oak,270,15,Before 1950,Partial,-85.60407617,42.28903133
-290,293,PINI,Pinus nigra,Austrian Pine,270,15,Before 1950,Partial,-85.60412398,42.28904601
-291,281,PINI,Pinus nigra,Austrian Pine,270,15,Before 1950,Partial,-85.60409875,42.28901962
-292,290,ACPL,Acer platanoides,Norway Maple,270,21,,Partial,-85.60406122,42.28901813
-293,279,PIST,Pinus strobus,Eastern White Pine,270,10,Before 1950,Partial,-85.60403862,42.28904378
-294,283,CAOV,Carya ovata,Shagbark Hickory,270,4,Before 1950,Partial,-85.60396189,42.28900372
-295,282,QUAL,Quercus alba,White Oak,270,4,Before 1950,Partial,-85.60390839,42.28895283
-296,278,QUAL,Quercus alba,White Oak,270,15,Before 1950,Partial,-85.60406255,42.28899259
-297,276,CAOV,Carya ovata,Shagbark Hickory,270,15,Before 1950,Partial,-85.60412508,42.2889557
-298,269,ACPL,Acer platanoides,Norway Maple,270,15,Before 1950,Partial,-85.60411436,42.28893808
-299,270,PINI,Pinus nigra,Austrian Pine,270,15,Before 1950,Partial,-85.60408926,42.28897135
-300,277,ACPL,Acer platanoides,Norway Maple,270,15,Before 1950,Partial,-85.60409626,42.28897142
-301,271,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60404874,42.2889465
-302,272,PIST,Pinus strobus,Eastern White Pine,270,10,Before 1950,Partial,-85.60400971,42.28894267
-303,273,PIST,Pinus strobus,Eastern White Pine,270,10,Before 1950,Partial,-85.60403795,42.28890974
-304,274,ACPL,Acer platanoides,Norway Maple,270,15,Before 1950,Partial,-85.60402879,42.28889136
-305,275,ACPL,Acer platanoides,Norway Maple,270,15,Before 1950,Partial,-85.60405209,42.28888732
-306,268,MOAL,Morus alba,White Mulberry,270,15,Before 1950,Partial,-85.60407449,42.28886743
-307,267,ACPL,Acer platanoides,Norway Maple,180,15,Before 1950,Partial,-85.6039651,42.28880842
-308,266,ROPS,Robinia pseudoacacia,Black Locust,180,10,Before 1950,Partial,-85.60384614,42.28884061
-309,264,ROPS,Robinia pseudoacacia,Black Locust,180,10,Before 1950,Partial,-85.60372587,42.28880599
-310,263,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60347961,42.2888407
-311,265,QURU,Quercus rubra,Northern Red Oak,180,10,Before 1950,Partial,-85.60341902,42.28882385
-312,262,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60323885,42.28881112
-313,261,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60313616,42.28881899
-314,,,,,,,,,-85.60313878,42.2889513
-315,350,JUNI,Juglans nigra,Black Walnut,270,4,Before 1950,Partial,-85.60306614,42.28898836
-316,348,COFL,Cornus florida,Florida Dogwood,270,4,Before 1950,Partial,-85.60306693,42.28897039
-317,351,ULAM,Ulmus americana,American Elm,270,4,Before 1950,Partial,-85.60306554,42.289002
-318,349,QUAL,Quercus alba,White Oak,270,4,Before 1950,Partial,-85.60303925,42.28893859
-319,259,QUAL,Quercus alba,White Oak,180,10,Before 1950,Partial,-85.60306007,42.28884897
-320,258,ROPS,Robinia pseudoacacia,Black Locust,180,10,Before 1950,Partial,-85.60305212,42.28881765
-321,257,ACPL,Acer platanoides,Norway Maple,180,10,Before 1950,Partial,-85.60297587,42.28881301
-322,256,PRSE7,Prunus serotina,Black Cherry,180,10,Before 1950,Partial,-85.60294084,42.2888175
-323,255,QURU,Quercus rubra,Northern Red Oak,180,10,Before 1950,Partial,-85.60292003,42.28881531
-324,254,ACPL,Acer platanoides,Norway Maple,180,10,Before 1950,Partial,-85.60287527,42.28882682
-325,251,JUNI,Juglans nigra,Black Walnut,90,15,Before 1950,Partial,-85.60274608,42.28884671
-326,250,ROPS,Robinia pseudoacacia,Black Locust,270,21,,Partial,-85.60266696,42.28886483
-327,249,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60265198,42.28887258
-328,248,TIPL,Tilia platyphyllos,Big Leaf Linden,270,21,,Partial,-85.60259486,42.28893978
-329,247,CAOV,Carya ovata,Shagbark Hickory,270,15,1950-1980,Partial,-85.60259547,42.28897591
-330,253,AEHI,Aesculus hippocastanum,Horse Chestnut,90,21,,Partial,-85.60266635,42.2889973
-331,252,JUNI,Juglans nigra,Black Walnut,90,15,Before 1950,Partial,-85.60270302,42.28894741
-332,244,QUAL,Quercus alba,White Oak,270,10,1950-1980,Sun,-85.60258914,42.28931647
-333,245,QUAL,Quercus alba,White Oak,270,10,1950-1980,Partial,-85.60259551,42.28919122
-334,246,QUAL,Quercus alba,White Oak,270,4,1950-1980,Partial,-85.60257607,42.28907949
-335,352,ACPL,Acer platanoides,Norway Maple,360,4,Before 1950,Partial,-85.60298112,42.28900902
-336,346,QUAL,Quercus alba,White Oak,360,4,Before 1950,Partial,-85.60339492,42.28897676
-337,345,QUAL,Quercus alba,White Oak,270,4,Before 1950,Partial,-85.60341208,42.28899595
-338,343,QUAL,Quercus alba,White Oak,90,4,Before 1950,Partial,-85.60347981,42.28896325
-339,342,MOAL,Morus alba,White Mulberry,360,4,Before 1950,Partial,-85.60353901,42.28898384
-340,1020,PRSU,Prunus subhirtella,Weeping Cherry,90,4,Before 1950,Sun,-85.6010514,42.29221911
-341,1021,ACPL,Acer platanoides,Norway Maple,90,10,Before 1950,Sun,-85.60095359,42.29216076
-342,1022,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Sun,-85.60098991,42.29189589
-343,1023,ACSA4,Acer saccharum,Sugar Maple,180,21,,Sun,-85.60106047,42.29177725
-344,1066,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60115563,42.29156752
-345,1065,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60115598,42.29157625
-346,1064,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60112595,42.29159085
-347,1063,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60115766,42.29160136
-348,1062,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60116379,42.29159535
-349,1061,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60118404,42.29159904
-350,1060,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60118856,42.29159016
-351,1059,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60121503,42.291603
-352,1058,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60124193,42.29160639
-353,1057,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60126293,42.29159065
-354,1056,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60125076,42.2915947
-355,1055,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60127055,42.29160081
-356,1054,FASY,Fagus sylvatica,European Beech,180,21,,Partial,-85.60130371,42.29160425
-357,1037,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.6014588,42.29163134
-358,1038,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60147311,42.29164465
-359,1039,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60146348,42.29165076
-360,1040,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60146942,42.29166819
-361,1041,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60147508,42.29169799
-362,1042,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60143733,42.29169495
-363,1043,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.6014391,42.29169567
-364,1044,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60140544,42.29168469
-365,1045,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60137523,42.29168754
-366,1046,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60135308,42.291676
-367,1047,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60133125,42.2916943
-368,1048,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60131569,42.29167042
-369,1049,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.6013182,42.29166755
-370,1050,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60132589,42.29165478
-371,1051,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60132946,42.2916427
-372,1052,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60133287,42.29163507
-373,1053,TSCA,Tsuga canadensis,Eastern Hemlock,180,21,,Partial,-85.60130292,42.29160644
-374,1036,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60149394,42.29158479
-375,1034,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60160111,42.29163945
-376,1033,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60161145,42.29160793
-377,1025,MEGL,Metasequoia glyptostroboides,Dawn Redwood,360,21,,Partial,-85.60163942,42.29165372
-378,1032,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60164562,42.2916487
-379,1031,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60166307,42.29163057
-380,1030,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60166758,42.29161876
-381,1029,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.6016513,42.29155675
-382,1028,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60164802,42.29156345
-383,1027,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60162613,42.29153535
-384,1026,TSCA,Tsuga canadensis,Eastern Hemlock,360,21,,Partial,-85.60162587,42.29154317
-385,382,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60119249,42.29148534
-386,383,PRSE9,Prunus serotina,Black Cherry,90,15,Before 1950,Partial,-85.60112113,42.29147842
-387,1069,FASY,Fagus sylvatica,European Beech,360,21,,Partial,-85.60114981,42.29151295
-388,1068,FASY,Fagus sylvatica,European Beech,360,21,,Partial,-85.60114838,42.29154526
-389,1067,FASY,Fagus sylvatica,European Beech,360,21,,Partial,-85.60113267,42.29154872
-390,384,PISY,Pinus sylvestris,Scotch Pine,90,15,Before 1950,Partial,-85.60111571,42.29141464
-391,381,ROPS,Robinia pseudoacacia,Black Locust,90,15,Before 1950,Partial,-85.60120341,42.29145485
-392,380,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60125318,42.29144647
-393,379,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60128776,42.29149741
-394,378,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60129247,42.2914412
-395,546,ACSA3,Acer saccharum,Sugar Maple,360,21,,Partial,-85.60310489,42.2902453
-396,545,ACSA2,Acer saccharum,Sugar Maple,360,21,,Partial,-85.60311396,42.29027363
-397,543,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60313782,42.29025792
-398,542,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60319148,42.29026273
-399,537,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60322995,42.29022034
-400,538,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60318068,42.29019401
-401,539,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60314715,42.29016184
-402,342,MOAL,Morus alba,White Mulberry,360,4,Before 1950,Partial,-85.60310975,42.29016185
-403,531,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60311846,42.29014473
-404,549,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60310681,42.2901071
-405,536,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60310448,42.29008397
-406,535,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60314055,42.29007698
-407,534,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60314543,42.29010086
-408,528,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60317874,42.290111
-409,527,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60320484,42.29010165
-410,523,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60330114,42.29008518
-411,,,,,,,,,-85.60330391,42.29007195
-412,526,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60324425,42.29014085
-413,529,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60316715,42.29014751
-414,533,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60315029,42.29013588
-415,530,PIST,Pinus strobus,Eastern White Pine,360,21,,Shade,-85.60314442,42.29015109
-416,583,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60263214,42.29023891
-417,,,,,,,,,-85.60258711,42.2902628
-418,,,,,,,,,-85.60253821,42.29025938
-419,546,ACSA3,Acer saccharum,Sugar Maple,360,21,,Partial,-85.60247227,42.29025703
-420,590,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60252969,42.29021813
-421,597,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60251501,42.29018674
-422,598,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60251065,42.29016299
-423,599,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60248088,42.2901508
-424,582,PSME,Pseudotsuga menziesii,Douglas-fir,360,21,,Partial,-85.60264978,42.29014636
-425,600,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60248851,42.29009571
-426,602,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60252769,42.29005961
-427,581,QURU,Quercus rubra,Red Oak,360,15,Before 1950,Partial,-85.60260839,42.29000726
-428,614,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60248438,42.28998501
-429,613,PINI,Pinus nigra,Austrian Pine,360,15,Before 1950,Partial,-85.60244169,42.29001035
-430,611,QUAL,Quercus alba,White Oak,270,21,,Partial,-85.60239694,42.29003737
-431,605,ACPL,Acer platanoides,Norway Maple,270,15,1950-1980,Partial,-85.60237686,42.29009124
-432,596,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.60239473,42.29012297
-433,604,CAOV,Carya ovata,Shagbark Hickory,270,15,1950-1980,Partial,-85.60230946,42.29012197
-434,603,ACPL,Acer platanoides,Norway Maple,270,15,1950-1980,Partial,-85.60229936,42.29010338
-435,595,QUAL,Quercus alba,White Oak,270,15,1950-1980,Partial,-85.6023388,42.29017444
-436,594,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60238485,42.2901951
-437,593,ULAM,Ulmus americana,American Elm,270,21,,Partial,-85.60241926,42.2901857
-438,592,TIAM,Tilia americana,American Basswood,270,21,,Partial,-85.60241908,42.29021272
-439,587,QURU,Quercus rubra,Red Oak,270,21,,Partial,-85.60239345,42.2902515
-440,588,QURU,Quercus rubra,Red Oak,270,15,1950-1980,Partial,-85.60235426,42.29027011
-441,589,QURU,Quercus rubra,Red Oak,270,15,1950-1980,Partial,-85.60233802,42.2902374
-442,683,QUAL,Quercus alba,White Oak,270,10,1950-1980,Partial,-85.60226605,42.29018338
-443,680,PIST,Pinus strobus,Eastern White Pine,270,10,1950-1980,Partial,-85.60223101,42.29017341
-444,679,PIST,Pinus strobus,Eastern White Pine,270,4,1950-1980,Partial,-85.60219183,42.2901628
-445,681,PIST,Pinus strobus,Eastern White Pine,270,10,1950-1980,Partial,-85.60221511,42.29019004
-446,682,PIST,Pinus strobus,Eastern White Pine,270,10,1950-1980,Partial,-85.60221509,42.29018962
-447,676,THOC,Thuja occidentalis,Northern White Cedar,270,10,1950-1980,Partial,-85.60217685,42.29019647
-448,677,TSCA,Tsuga canadensis,Eastern Hemlock,270,4,1950-1980,Partial,-85.60224533,42.29022361
-449,676,THOC,Thuja occidentalis,Northern White Cedar,270,10,1950-1980,Partial,-85.60222607,42.29024548
-450,673,MOAL,Morus alba,White Mulberry,360,10,1950-1980,Partial,-85.60216857,42.29020768
-451,674,MA11,Malus spp.,Crab Apple,360,4,1950-1980,Partial,-85.60204875,42.29027419
-452,673,MOAL,Morus alba,White Mulberry,360,10,1950-1980,Partial,-85.60193298,42.29028464
-453,672,MOAL,Morus alba,White Mulberry,360,10,1950-1980,Partial,-85.60184748,42.29029238
-454,1255,MA52,Malus spp.,Crab Apple,270,4,1950-1980,Partial,-85.59852942,42.29171122
-455,1260,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.59815574,42.29191902
-456,1262,MA55,Malus spp.,Crab Apple,360,21,,Partial,-85.59803024,42.29194355
-457,1263,JUNI,Juglans nigra,Black Walnut,360,21,,Partial,-85.5979513,42.29193804
-458,1264,MA56,Malus spp.,Crab Apple,360,21,,Partial,-85.59782116,42.2919006
-459,1280,JUNI,Juglans nigra,Black Walnut,90,10,1950-1980,Partial,-85.59809143,42.2916429
-460,,,,,,,,,-85.59810183,42.29161444
-461,1246,FAGR,Fagus grandifolia,American Beech,180,4,1950-1980,Partial,-85.59848216,42.29127635
-462,1245,GLTR,Gleditsia triacanthos,Honeylocust,180,4,1950-1980,Partial,-85.59843909,42.29126324
-463,1244,ACPL,Acer platanoides,Norway Maple,180,4,1950-1980,Partial,-85.59831226,42.29125197
-464,1243,ACPL,Acer platanoides,Norway Maple,270,10,1950-1980,Partial,-85.59831139,42.29115733
-465,1274,ACSA9,Acer saccharum,Sugar Maple,180,4,1950-1980,Partial,-85.59803644,42.29107657
-466,1273,ACSA8,Acer saccharum,Sugar Maple,180,4,1950-1980,Partial,-85.59791892,42.29102457
-467,1276,AIAL,Ailanthus altissima,Tree of Heaven,270,10,Before 1950,Sun,-85.59794151,42.29140861
-468,1275,JUNI,Juglans nigra,Black Walnut,90,21,,Partial,-85.59810006,42.29142629
-469,1287,PISY,Pinus sylvestris,Scotch Pine,90,10,1950-1980,Partial,-85.59811602,42.29148801
-470,1286,ACSA10,Acer saccharum,Sugar Maple,90,10,1950-1980,Partial,-85.59809767,42.29155606
-471,1284,ULAM,Ulmus americana,American Elm,90,10,1950-1980,Partial,-85.5980836,42.29156525
-472,1285,ULAM,Ulmus americana,American Elm,90,10,1950-1980,Partial,-85.59812276,42.29151252
-473,1283,QUAL,Quercus alba,White Oak,90,10,1950-1980,Partial,-85.59811545,42.29160481
-474,1282,JUNI,Juglans nigra,Black Walnut,90,15,1950-1980,Partial,-85.59805826,42.29157728
-475,1279,TIAM,Tilia americana,American Basswood,270,15,Before 1950,Partial,-85.5980095,42.29160102
-476,,,,,,,,,-85.5978702,42.29155912
-477,1266,CEOC,Celtis occidentalis,Northern Hackberry,360,21,,Partial,-85.59749929,42.29166834
-478,1267,ACPL,Acer platanoides,Norway Maple,90,10,Before 1950,Sun,-85.59755068,42.2913039
-479,1269,MA57,Malus spp.,Crab Apple,90,4,1950-1980,Partial,-85.59758898,42.29119969
-480,1268,TICO,Tilia cordata,Little Leaf Linden,90,10,1950-1980,Partial,-85.59755871,42.29114922
-481,1270,MA58,Malus spp.,Crab Apple,90,4,1950-1980,Partial,-85.5976379,42.29111802
-482,1271,MA59,Malus spp.,Crab Apple,90,4,1950-1980,Partial,-85.59765392,42.29101763
-483,1272,PSME,Pseudotsuga menziesii,Douglas-fir,90,4,1950-1980,Sun,-85.59767136,42.29098367
-484,,,,,,,,,-85.59761285,42.29060785
-485,,,,,,,,,-85.59729498,42.29049996
-486,1300,PRSE18,Prunus serotina,Black Cherry,90,4,After 1980,Partial,-85.59652878,42.29096256
-487,1297,BENI,Betula nigra,River birch,90,21,,Partial,-85.5963039,42.29097448
-488,1296,ACRU,Acer rubrum,Red Maple,180,4,After 1980,Sun,-85.59629734,42.29100996
-489,1337,BENI,Betula nigra,River birch,360,10,After 1980,Partial,-85.59654359,42.29123221
-490,1336,BENI,Betula nigra,River birch,360,15,After 1980,Partial,-85.59658287,42.29131617
-491,1334,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.59667329,42.29145484
-492,1333,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.59674667,42.29144444
-493,1332,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.5967834,42.29147092
-494,1331,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.59682206,42.29146315
-495,1330,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.59686056,42.29148991
-496,1329,ABFR,Abies fraseri,Fraser Fir,360,21,,Partial,-85.59685425,42.29146577
-497,1328,ABFR,Abies fraseri,Fraser Fir,90,21,,Sun,-85.59705805,42.29149741
-498,1293,,,,,,,,-85.59708034,42.29148337
-499,1323,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.59714915,42.29147903
-500,1326,ABFR,Abies fraseri,Fraser Fir,90,21,,Partial,-85.59713543,42.29149699
-501,1322,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.59716646,42.29147471
-502,1321,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.5971817,42.29148063
-503,1324,ABFR,Abies fraseri,Fraser Fir,90,21,,Partial,-85.59719579,42.29151198
-504,1320,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.5972327,42.29147872
-505,1319,ABFR,Abies fraseri,Fraser Fir,90,21,,Partial,-85.59725994,42.29152264
-506,1317,BENI,Betula nigra,River birch,360,21,,Partial,-85.59731028,42.29161997
-507,1316,BENI,Betula nigra,River birch,360,21,,Partial,-85.5972652,42.29169085
-508,,,,,,,,,-85.5972935,42.29175738
-509,1314,ACGR,Acer griseum,Paperbark Maple,360,21,,Partial,-85.59718943,42.29182739
-510,1313,ACGR,Acer griseum,Paperbark Maple,360,21,,Sun,-85.59686735,42.29179501
-511,1312,ACGR,Acer griseum,Paperbark Maple,360,21,,Sun,-85.59678288,42.29177627
-512,1311,ACGR,Acer griseum,Paperbark Maple,360,21,,Sun,-85.59669181,42.29176241
-513,,,,,,,,,-85.5974108,42.29143232
-514,,,,,,,,,-85.59743931,42.29133999
-515,1341,PIST,Pinus strobus,Eastern White Pine,270,4,After 1980,Partial,-85.59737461,42.29123718
-516,1342,PIST,Pinus strobus,Eastern White Pine,270,4,After 1980,Partial,-85.59737335,42.29122695
-517,1343,PIST,Pinus strobus,Eastern White Pine,270,4,After 1980,Partial,-85.59739093,42.29119743
-518,,,,,,,,,-85.59745833,42.29116499
-519,1345,ACPL,Acer platanoides,Norway Maple,270,10,After 1980,Sun,-85.59746676,42.29104064
-520,,,,,,,,,-85.59745756,42.29081022
-521,,,,,,,,,-85.59742548,42.29070125
-522,836,PYCA,Pyrus calleryana,Callery Pear,360,21,,Partial,-85.59747427,42.29038365
-523,835,PYCA,Pyrus calleryana,Callery Pear,360,21,,Partial,-85.59762482,42.29038538
-524,834,PYCA,Pyrus calleryana,Callery Pear,360,10,After 1980,Partial,-85.59782055,42.29038063
-525,832,PSME,Pseudotsuga menziesii,Douglas-fir,360,4,After 1980,Partial,-85.59785189,42.29032163
-526,831,PIST,Pinus strobus,Eastern White Pine,360,4,After 1980,Partial,-85.59790965,42.29031109
-527,,,,,,,,,-85.59801447,42.29034082
-528,830,PIST,Pinus strobus,Eastern White Pine,360,4,After 1980,Partial,-85.59802217,42.29031737
-529,829,PIST,Pinus strobus,Eastern White Pine,360,4,After 1980,Partial,-85.59814451,42.2903092
-530,828,PIAB,Picea abies,Norway Spruce,360,4,After 1980,Partial,-85.59822783,42.29031654
-531,827,CECA,Cercis canadensis,Eastern Redbud,360,4,After 1980,Partial,-85.59833382,42.29032905
-532,825,PYCA,Pyrus calleryana,Callery Pear,360,15,Before 1950,Sun,-85.59891007,42.29030304
-533,823,LITU,Liriodendron tulipifera,Tuliptree,360,10,Before 1950,Sun,-85.59909619,42.29023998
-534,822,QUMA4,Quercus macrocarpa,Bur Oak,360,15,Before 1950,Sun,-85.5993257,42.29024089
-535,755,MA19,Malus spp.,Crab Apple,360,10,Before 1950,Sun,-85.60028968,42.29023569
-536,754,QUAL,Quercus alba,White Oak,360,10,Before 1950,Sun,-85.60046542,42.29019932
-537,750,QUAL,Quercus alba,White Oak,90,10,Before 1950,Partial,-85.6006203,42.29009183
-538,749,QUAL,Quercus alba,White Oak,90,10,Before 1950,Partial,-85.60059927,42.28998466
-539,747,MA17,Malus spp.,Crab Apple,90,4,Before 1950,Partial,-85.600657,42.28996304
-540,746,MA16,Malus spp.,Crab Apple,90,4,Before 1950,Partial,-85.6006985,42.28997022
-541,744,CECA,Cercis canadensis,Eastern Redbud,90,4,Before 1950,Partial,-85.60063798,42.29002991
-542,745,CECA,Cercis canadensis,Eastern Redbud,90,4,Before 1950,Partial,-85.60066276,42.29005526
-543,743,PIGL1,Picea glauca,White Spruce,90,4,Before 1950,Partial,-85.60070087,42.29005906
-544,742,CECA,Cercis canadensis,Eastern Redbud,90,4,Before 1950,Partial,-85.60066905,42.29011813
-545,741,CECA,Cercis canadensis,Eastern Redbud,90,4,Before 1950,Partial,-85.6006541,42.29014555
-546,740,CECA,Cercis canadensis,Eastern Redbud,360,4,1950-1980,Partial,-85.60075067,42.29013992
-547,739,COFL,Cornus Florida,Florida dogwood,360,4,1950-1980,Shade,-85.60077984,42.29015213
-548,752,FAGR,Fagus grandifolia,American Beech,360,10,Before 1950,Partial,-85.60075227,42.29017994
-549,751,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60065373,42.29016873
-550,753,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60072075,42.29026179
-551,,,,,,,,,-85.60349616,42.289778
-552,2,QUAL,Quercus alba,White Oak,180,21,,Partial,-85.60351404,42.28971417
-553,4,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.6035173,42.28971154
-554,,,,,,,,,-85.60352873,42.28969459
-555,6,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.60354592,42.28970562
-556,7,ULAM,Ulmus americana,American Elm,180,15,After 1980,Partial,-85.60360159,42.2897181
-557,10,ULAM,Ulmus americana,American Elm,180,15,After 1980,Partial,-85.60361351,42.28971525
-558,9,QURU,Quercus rubra,Northern Red Oak,180,15,After 1980,Partial,-85.60361265,42.28974174
-559,8,QURU,Quercus rubra,Northern Red Oak,180,15,After 1980,Partial,-85.60361565,42.28973967
-560,21,CAGL,Carya glabra,Pignut Hickory,180,15,After 1980,Partial,-85.60365434,42.28970269
-561,20,QURU,Quercus rubra,Northern Red Oak,90,15,Before 1950,Partial,-85.60367563,42.28969872
-562,13,ULAM,Ulmus americana,American Elm,180,15,After 1980,Partial,-85.60368431,42.28972802
-563,11,CASP,Catalpa speciosa,Northern Catalpa,180,15,After 1980,Partial,-85.60366488,42.28972366
-564,12,ULAM,Ulmus americana,American Elm,180,15,After 1980,Partial,-85.60367084,42.289739
-565,14,CEOC,Celtis occidentalis,Northern Hackberry,180,15,After 1980,Partial,-85.6036769,42.28975569
-566,19,QUAL,Quercus alba,White Oak,90,15,Before 1950,Partial,-85.60373065,42.28969957
-567,16,ACPL,Acer platanoides,Norway Maple,180,15,After 1980,Partial,-85.60379135,42.28971518
-568,17,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60381319,42.28970845
-569,322,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.60388029,42.28975512
-570,324,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.6038305,42.28971252
-571,323,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.60385414,42.28970163
-572,325,ACPL,Acer platanoides,Norway Maple,90,10,Before 1950,Partial,-85.6038547,42.28967565
-573,18,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60380475,42.28967516
-574,40,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60381179,42.28961303
-575,41,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60384015,42.28963735
-576,,,,,,,,,-85.60384964,42.28959446
-577,68,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60378669,42.28954734
-578,67,JUNI,Juglans nigra,Black Walnut,90,15,Before 1950,Partial,-85.60377898,42.28951013
-579,66,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Shade,-85.60380831,42.28953819
-580,69,,,,,,,,-85.60382443,42.2895171
-581,65,ROPS,Robinia pseudoacacia,Black Locust,90,15,Before 1950,Partial,-85.60379786,42.28948401
-582,64,TIAM,Tilia americana,American Basswood,90,21,,Shade,-85.60378393,42.28949272
-583,70,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60381432,42.28948477
-584,,,,,,,,,-85.60380489,42.2894317
-585,327,PIST,Pinus strobus,Eastern White Pine,90,4,Before 1950,Partial,-85.60391626,42.28946246
-586,328,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.60391448,42.28943728
-587,72,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60382585,42.28941701
-588,97,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60377571,42.28937318
-589,63,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60376319,42.28948882
-590,62,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60372657,42.28945793
-591,61,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60368349,42.28947371
-592,60,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60367636,42.28948768
-593,59,TIAM,Tilia americana,American Basswood,90,21,,Shade,-85.60363092,42.28951717
-594,48,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.6035514,42.28956867
-595,49,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60355374,42.28955836
-596,47,PRSE1,Prunus serotina,Black Cherry,90,21,,Partial,-85.60355956,42.28956497
-597,35,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.6035745,42.28962498
-598,27,JUNI,Juglans nigra,Black Walnut,90,21,,Partial,-85.603578,42.28964122
-599,25,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60361034,42.28963001
-600,24,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.6036295,42.28965206
-601,23,ACNE,Acer negundo,Boxelder,90,21,,Shade,-85.60364131,42.28965846
-602,22,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60367514,42.28967791
-603,26,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.6036065,42.28968884
-604,56,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60355231,42.28952486
-605,57,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60353834,42.2895004
-606,78,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.6035577,42.289469
-607,79,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60357225,42.28947025
-608,77,CEOC,Celtis occidentalis,Northern Hackberry,90,21,,Shade,-85.60359871,42.28947231
-609,76,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.60364069,42.28946421
-610,75,COFL,Cornus florida,Florida Dogwood,90,21,,Partial,-85.60368055,42.28943536
-611,96,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.6037224,42.28936681
-612,95,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60373377,42.28936047
-613,99,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60377098,42.28935155
-614,98,ULAM,Ulmus americana,American Elm,90,15,Before 1950,Partial,-85.60383734,42.28936511
-615,329,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.60384002,42.28930876
-616,101,ULAM,Ulmus americana,American Elm,90,15,Before 1950,Partial,-85.60380859,42.28925333
-617,102,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60378248,42.28928436
-618,100,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.6037322,42.28931054
-619,103,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60376169,42.28928796
-620,110,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60366401,42.28930961
-621,109,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60367275,42.28928704
-622,108,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60369544,42.28929056
-623,107,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60373403,42.28924347
-624,105,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60370125,42.28923127
-625,104,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60374098,42.28924347
-626,332,ACPL,Acer platanoides,Norway Maple,90,4,Before 1950,Partial,-85.60385687,42.28921436
-627,295,ROPS,Robinia pseudoacacia,Black Locust,180,4,Before 1950,Partial,-85.60392719,42.28917596
-628,331,MOAL,Morus alba,White Mulberry,180,10,Before 1950,Partial,-85.60383412,42.2891934
-629,330,PIST,Pinus strobus,Eastern White Pine,90,4,Before 1950,Partial,-85.60382559,42.2891866
-630,125,ULPA,Ulmus pumila,Siberian Elm,90,15,Before 1950,Partial,-85.60374945,42.28915258
-631,,,,,,,,,-85.60377068,42.28912274
-632,,,,,,,,,-85.60376934,42.28912376
-633,334,PIST,Pinus strobus,Eastern White Pine,360,4,Before 1950,Partial,-85.60377918,42.28912538
-634,127,ACPL,Acer platanoides,Norway Maple,90,15,Before 1950,Partial,-85.60367612,42.28917131
-635,126,TIAM,Tilia americana,American Basswood,90,15,Before 1950,Partial,-85.60370126,42.28912708
-636,137,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60358838,42.2890884
-637,136,ULAM,Ulmus americana,American Elm,360,21,,Partial,-85.60355675,42.28910843
-638,138,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60350144,42.28911229
-639,139,JUNI,Juglans nigra,Black Walnut,360,15,Before 1950,Partial,-85.60354829,42.28908556
-640,140,ACPL,Acer platanoides,Norway Maple,360,15,Before 1950,Partial,-85.60355911,42.28907073
-641,141,ACPL,Acer platanoides,Norway Maple,360,15,Before 1950,Partial,-85.60349952,42.28906629
-642,142,PRSE4,Prunus serotina,Black Cherry,360,15,Before 1950,Partial,-85.60348083,42.2890823
-643,143,ULAM,Ulmus americana,American Elm,360,21,,Partial,-85.603454,42.28908073
-644,144,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60345312,42.28911184
-645,154,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60329849,42.28916951
-646,153,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60331878,42.2891907
-647,155,ULAM,Ulmus americana,American Elm,360,21,,Partial,-85.60323694,42.28913799
-648,156,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60322753,42.28909529
-649,159,ACPL,Acer platanoides,Norway Maple,360,15,Before 1950,Partial,-85.60319053,42.28904574
-650,160,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.6031987,42.28907447
-651,161,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60317786,42.28911183
-652,166,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60316038,42.28908687
-653,165,ACPL,Acer platanoides,Norway Maple,360,15,Before 1950,Partial,-85.60319996,42.2890585
-654,164,ROPS,Robinia pseudoacacia,Black Locust,360,15,Before 1950,Partial,-85.60314406,42.28905158
-655,162,TIAM,Tilia americana,American Basswood,360,15,Before 1950,Partial,-85.60318491,42.28905016
-656,163,TIAM,Tilia americana,American Basswood,360,15,Before 1950,Partial,-85.60313145,42.28905694
-657,168,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60313879,42.28913254
-658,171,ULPA,Ulmus pumila,Siberian Elm,360,21,,Shade,-85.60317482,42.2891845
-659,170,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60317964,42.28918645
-660,169,JUNI,Juglans nigra,Black Walnut,360,21,,Partial,-85.6031454,42.28915293
-661,175,CEOC,Celtis occidentalis,Northern Hackberry,360,21,,Partial,-85.6031179,42.28919984
-662,1335,BENI,Betula nigra,River birch,360,21,,Partial,-85.59660848,42.29138625
-663,205,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60297275,42.28920614
-664,202,CEOC,Celtis occidentalis,Northern Hackberry,360,21,,Partial,-85.60292167,42.28929908
-665,238,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.60292929,42.28930547
-666,201,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60294024,42.28929887
-667,237,CEOC,Celtis occidentalis,Northern Hackberry,180,21,,Partial,-85.60288493,42.28928382
-668,23,ACNE,Acer negundo,Boxelder,90,21,,Shade,-85.60285538,42.28929305
-669,239,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.6030202,42.28931315
-670,240,MOAL,Morus alba,White Mulberry,180,21,,Partial,-85.60305455,42.28933186
-671,241,ULAM,Ulmus americana,American Elm,180,21,,Partial,-85.60315057,42.2893424
-672,242,ULAM,Ulmus americana,American Elm,180,21,,Partial,-85.60316761,42.28932895
-673,243,ULAM,Ulmus americana,American Elm,180,21,,Partial,-85.60319634,42.28932918
-674,81,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.60340927,42.28943887
-675,82,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.6034156,42.28942645
-676,83,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.60344713,42.28942839
-677,84,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.60344423,42.28944025
-678,85,ROPS,Robinia pseudoacacia,Black Locust,90,21,,Partial,-85.60347351,42.28941205
-679,86,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60350145,42.28941237
-680,88,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60351034,42.28937442
-681,87,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60344462,42.28935715
-682,91,QUAL,Quercus alba,White Oak,90,21,,Partial,-85.6036307,42.28937365
-683,92,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.60360942,42.28939469
-684,58,CAGL,Carya glabra,Pignut Hickory,90,21,,Partial,-85.60359232,42.28947014
-685,44,JUNI,Juglans nigra,Black Walnut,90,21,,Partial,-85.60368847,42.2895618
-686,15,CAGL,Carya glabra,Pignut Hickory,180,15,After 1980,Partial,-85.60377908,42.28970464
-687,39,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60380997,42.2896303
-688,43,TIAM,Tilia americana,American Basswood,90,15,Before 1950,Shade,-85.60378809,42.2895617
-689,37,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60374566,42.28961913
-690,36,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.6037189,42.2896119
-691,38,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60373094,42.28959797
-692,46,ACNE,Acer negundo,Boxelder,90,21,,Partial,-85.60364143,42.28957876
-693,45,TIAM,Tilia americana,American Basswood,90,21,,Partial,-85.60365807,42.28957139
-694,177,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60301353,42.28921416
-695,198,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.6030861,42.28923843
-696,197,MOAL,Morus alba,White Mulberry,360,21,,Partial,-85.60313218,42.28923393
-697,,,,,,,,,-85.60317766,42.28922468
-698,172,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60322618,42.28921669
-699,191,JUNI,Juglans nigra,Black Walnut,360,21,,Partial,-85.60332834,42.28923614
-700,115,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60349718,42.28929467
-701,116,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60355269,42.28926503
-702,117,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60363594,42.28934197
-703,118,ACPL,Acer platanoides,Norway Maple,90,21,,Shade,-85.60360038,42.28927368
-704,119,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60359384,42.28924402
-705,120,PRSE2,Prunus serotina,Black Cherry,90,21,,Partial,-85.60358752,42.28924754
-706,122,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60359535,42.28923599
-707,123,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60367621,42.28920054
-708,124,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60368502,42.2891938
-709,124,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60373524,42.28930429
-710,128,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60366492,42.289154
-711,129,ULAM,Ulmus americana,American Elm,90,21,,Partial,-85.60361178,42.28915942
-712,133,QUAL,Quercus alba,White Oak,90,21,,Partial,-85.60358087,42.2891964
-713,130,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60357269,42.28917823
-714,131,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60356364,42.28917049
-715,132,ACPL,Acer platanoides,Norway Maple,90,21,,Partial,-85.60356586,42.2891866
-716,152,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.6035192,42.28915028
-717,320,BENI,Betula nigra,River birch,90,10,After 1980,Partial,-85.60344521,42.29006216
-718,319,BENI,Betula nigra,River birch,90,10,After 1980,Partial,-85.60345055,42.29011444
-719,318,BENI,Betula nigra,River birch,90,10,After 1980,Partial,-85.60339892,42.29016623
-720,509,PRSE10,Prunus serotina,Black Cherry,270,15,Before 1950,Partial,-85.60332405,42.28983149
-721,508,QURU,Quercus rubra,Red Oak,270,15,Before 1950,Partial,-85.6033358,42.28982432
-722,507,QURU,Quercus rubra,Red Oak,270,15,Before 1950,Partial,-85.6033603,42.28982702
-723,506,QURU,Quercus rubra,Red Oak,270,15,Before 1950,Partial,-85.60335721,42.28978516
-724,505,QURU,Quercus rubra,Red Oak,270,15,Before 1950,Partial,-85.60332465,42.2897717
-725,504,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60332173,42.2897472
-726,503,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60329013,42.28971662
-727,502,QUAL,Quercus alba,White Oak,270,10,Before 1950,Partial,-85.60328537,42.28959
-728,501,PSME,Pseudotsuga menziesii,Douglas-fir,270,10,Before 1950,Partial,-85.60328893,42.28957618
-729,513,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60325078,42.28990287
-730,512,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60330653,42.28990349
-731,510,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60334628,42.28987906
-732,511,QUAL,Quercus alba,White Oak,270,15,Before 1950,Partial,-85.60333931,42.28987105
-733,514,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60329255,42.28992336
-734,515,QURU,Quercus rubra,Red Oak,270,10,Before 1950,Partial,-85.60332057,42.2899365
-735,516,CAOV,Carya ovata,Shagbark Hickory,360,15,Before 1950,Partial,-85.60332924,42.28999048
-736,517,CAOV,Carya ovata,Shagbark Hickory,360,15,Before 1950,Partial,-85.60325644,42.28998657
-737,518,CAOV,Carya ovata,Shagbark Hickory,360,15,Before 1950,Partial,-85.60322244,42.28999661
-738,579,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60311738,42.28998043
-739,578,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60304451,42.28997585
-740,575,QUAL,Quercus alba,White Oak,360,10,Before 1950,Partial,-85.60299136,42.28997308
-741,573,QUAL,Quercus alba,White Oak,360,10,Before 1950,Partial,-85.60289604,42.28993507
-742,580,PRSE12,Prunus serotina,Black Cherry,360,15,Before 1950,Partial,-85.60315278,42.29001349
-743,519,CAOV,Carya ovata,Shagbark Hickory,360,15,Before 1950,Partial,-85.60323051,42.29000348
-744,520,PRSE11,Prunus serotina,Black Cherry,360,15,Before 1950,Partial,-85.60327379,42.29000287
-745,521,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60332172,42.29002677
-746,522,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60328129,42.29003206
-747,523,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60329075,42.29008344
-748,525,FAGR,Fagus grandifolia,American Beech,360,21,,Partial,-85.60323258,42.29008716
-749,577,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60312567,42.29004667
-750,576,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60307486,42.29006471
-751,574,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.6030225,42.29005016
-752,572,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60289476,42.2900019
-753,571,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60275254,42.29000823
-754,570,QUAL,Quercus alba,White Oak,360,15,Before 1950,Partial,-85.60278675,42.29003782
-755,589,QURU,Quercus rubra,Red Oak,270,15,1950-1980,Partial,-85.60274268,42.2900589
-756,568,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60274752,42.29008139
-757,567,PSME,Pseudotsuga menziesii,Douglas-fir,360,21,,Partial,-85.60276885,42.29017204
-758,566,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60270367,42.29015741
-759,560,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60274713,42.29029312
-760,559,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60285858,42.29022959
-761,558,JUNI,Juglans nigra,Black Walnut,360,21,,Partial,-85.60286892,42.29020763
-762,557,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60287716,42.29021875
-763,564,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60295783,42.29012846
-764,561,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60294268,42.29014009
-765,562,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60292125,42.29016005
-766,554,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60290739,42.29017398
-767,555,ACPL,Acer platanoides,Norway Maple,360,21,,Partial,-85.60292907,42.29021681
-768,556,QUAL,Quercus alba,White Oak,360,21,,Partial,-85.60292995,42.29025631
-769,551,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60296927,42.29028533
-770,548,CAOV,Carya ovata,Shagbark Hickory,360,21,,Partial,-85.60299757,42.29027094
-771,553,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60297513,42.29019828
-772,552,QURU,Quercus rubra,Red Oak,360,21,,Partial,-85.60300644,42.29023879
-773,547,TIAM,Tilia americana,American Basswood,360,21,,Partial,-85.60304571,42.29027717
-774,1184,MA48,Malus spp.,Crab Apple,90,21,,Sun,-85.59903454,42.29049623
-775,1183,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.59892814,42.29084995
-776,1238,MALI,Magnolia liliiflora,Lily Magnolia,90,21,,Partial,-85.59911661,42.29108996
-777,1239,MALI,Magnolia liliiflora,Lily Magnolia,90,21,,Partial,-85.59908778,42.29104654
-778,1182,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.59889417,42.29107441
-779,1184,MA48,Malus spp.,Crab Apple,90,21,,Sun,-85.59887811,42.29116768
-780,1180,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.59884812,42.29136924
-781,1179,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.59882605,42.29148993
-782,1178,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.59878758,42.29169067
-783,1177,PLOC,Platanus occidentalis,American Sycamore,270,21,,Partial,-85.5987671,42.29182182
-784,1256,MA53,Malus spp.,Crab Apple,360,21,,Partial,-85.59850105,42.29198733
-785,1251,PLOC,Platanus occidentalis,American Sycamore,270,15,1950-1980,Partial,-85.59863125,42.29174892
-786,1250,PLOC,Platanus occidentalis,American Sycamore,270,15,1950-1980,Sun,-85.59867018,42.29150799
-787,1249,PLOC,Platanus occidentalis,American Sycamore,270,15,1950-1980,Partial,-85.59871979,42.29126195
-788,1248,PIAB,Picea abies,Norway Spruce,180,15,1950-1980,Partial,-85.59864904,42.29116817
-789,1242,ACPL,Acer platanoides,Norway Maple,180,21,,Partial,-85.59866491,42.29106833
-790,,,,,,,,,-85.59852915,42.29098099
-791,,,,,,,,,-85.59864886,42.29097911
-792,,,,,,,,,-85.59867655,42.29097237
-793,,,,,,,,,-85.5987016,42.29093607
-794,,,,,,,,,-85.59869782,42.29092374
-795,,,,,,,,,-85.59869965,42.29089682
-796,,,,,,,,,-85.59870744,42.29088428
-797,,,,,,,,,-85.59871603,42.29087246
-798,1289,ACPL,Acer platanoides,Norway Maple,90,21,,Sun,-85.59880221,42.29071381
-799,1290,ACPL,Acer platanoides,Norway Maple,90,21,,Sun,-85.59881255,42.29064977
-800,,,,,,,,,-85.59858967,42.29052629
-801,1292,TICO,Tilia cordata,Little Leaf Linden,360,15,After 1980,Partial,-85.59865387,42.29045538
+tree_id,tag_number,species_code,latin_name,common_name,sun,long,lat
+0,1070,PLOC,Platanus occidentalis,American Sycamore,Full,-85.6009209,42.29159749
+1,1071,PLOC,Platanus occidentalis,American Sycamore,Full,-85.60092119,42.29142676
+2,1072,PLOC,Platanus occidentalis,American Sycamore,Full,-85.60093384,42.29132185
+3,1073,PLOC,Platanus occidentalis,American Sycamore,Full,-85.60095127,42.29120757
+4,1086,MA33,Malus spp.,Crab Apple,Partial,-85.60083271,42.29107917
+5,1090,COKO,Cornus kousa,Kousa Dogwood,Full,-85.60089238,42.29101963
+6,1092,COKO,Cornus kousa,Kousa Dogwood,Partial,-85.60089506,42.29088472
+7,1093,MA34,Malus spp.,Crab Apple,Partial,-85.60087732,42.2908223
+8,1094,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60082409,42.29081206
+9,1095,QUAL,Quercus alba,White Oak,Full,-85.60096583,42.29069828
+10,1096,AEGL,Aesculus glabra,Ohio Buckeye,Full,-85.60101457,42.29053543
+11,1135,ACPL,Acer platanoides,Norway Maple,Partial,-85.60086557,42.29044297
+12,,,,,,-85.60069805,42.29043523
+13,,,,,,-85.60058704,42.29044053
+14,1097,QUAL,Quercus alba,White Oak,Full,-85.6007166,42.2905845
+15,1099,MA35,Malus spp.,Crab Apple,Partial,-85.60056885,42.29059829
+16,1098,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60057257,42.290632
+17,1100,MA36,Malus spp.,Crab Apple,Partial,-85.60046908,42.2905901
+18,1101,MA37,Malus spp.,Crab Apple,Partial,-85.60041219,42.29059838
+19,1134,ACSA6,Acer saccharum,Sugar Maple,Partial,-85.60008272,42.29060037
+20,1127,ACSA5,Acer saccharum,Sugar Maple,Partial,-85.60011542,42.29062516
+21,1126,PRSE17,Prunus serotina,Black Cherry,Partial,-85.60010092,42.29071244
+22,1133,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60001442,42.29062236
+23,1131,FAGR,Fagus grandifolia,American Beech,Partial,-85.59997904,42.29057948
+24,1132,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.5999405,42.29060744
+25,1130,ACPL,Acer platanoides,Norway Maple,Full,-85.59998109,42.29045429
+26,1085,PYCA,Pyrus calleryana,Callery Pear,Full,-85.60017361,42.29144972
+27,1084,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60031045,42.29134376
+28,1083,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60037402,42.29133868
+29,1080,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60041304,42.29134368
+30,1081,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60038842,42.29135679
+31,1079,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60041409,42.29136967
+32,1082,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60036281,42.29137422
+33,1078,PIST,Pinus strobus,Eastern White Pine,Partial,-85.600391,42.29138837
+34,1077,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60040666,42.29139648
+35,1076,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60043896,42.29139964
+36,1075,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60041936,42.29142864
+37,1002,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.6005187,42.29162014
+38,1001,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.60053481,42.29169707
+39,1003,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.60058953,42.29164449
+40,1004,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.60064502,42.29164655
+41,1005,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.60072815,42.29166187
+42,1006,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.60081605,42.29166237
+43,1007,BEPA,Betula papyrifera,Paper Birch,Full,-85.60076692,42.29184098
+44,1008,MA30,Malus spp.,Crab Apple,Partial,-85.60076787,42.29193744
+45,1011,COKO,Cornus kousa,Kousa Dogwood,Partial,-85.60066432,42.29205998
+46,1012,PRSU,Prunus subhirtella,Weeping Cherry,Partial,-85.60065258,42.29209881
+47,1013,FASY,Fagus sylvatica,European Beech,Full,-85.60065677,42.29216066
+48,1014,MA31,Malus spp.,Crab Apple,Full,-85.60007196,42.29219602
+49,1019,MA32,Malus spp.,Crab Apple,Full,-85.59987742,42.29218561
+50,,,,,,-85.6014053,42.29148664
+51,376,ACPL,Acer platanoides,Norway Maple,Partial,-85.60143225,42.29146514
+52,375,ACPL,Acer platanoides,Norway Maple,Partial,-85.60146406,42.29145704
+53,385,PIAB,Picea abies,Norway Spruce,Partial,-85.60139719,42.29139683
+54,388,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60127582,42.29130963
+55,388,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60129954,42.29121845
+56,389,PIAB,Picea abies,Norway Spruce,Partial,-85.60131292,42.29115316
+57,387,COKO,Cornus kousa,Kousa Dogwood,Full,-85.60141271,42.29121342
+58,390,PINI,Pinus nigra,Austrian Pine,Full,-85.60149753,42.29113523
+59,360,PIAB,Picea abies,Norway Spruce,Partial,-85.60162126,42.29105572
+60,357,PIAB,Picea abies,Norway Spruce,Partial,-85.60154631,42.29104882
+61,356,TABA,Taxus baccata,English Yew,Partial,-85.60148327,42.29104216
+62,355,PIAB,Picea abies,Norway Spruce,Partial,-85.60135098,42.29104857
+63,354,PIAB,Picea abies,Norway Spruce,Partial,-85.60132738,42.29104322
+64,353,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.60128792,42.29103924
+65,1141,PLOC,Platanus occidentalis,American Sycamore,Full,-85.6011498,42.29097015
+66,1142,PYCA,Pyrus calleryana,Callery Pear,Full,-85.60119424,42.29075415
+67,1143,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60140993,42.29081952
+68,1144,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60129697,42.29076469
+69,1145,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60128023,42.29073167
+70,1148,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60121736,42.29063154
+71,1147,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60130941,42.2906343
+72,1148,CRDO,Crataegus douglasii,Black Hawthorne,Partial,-85.60138745,42.29060642
+73,1149,ACPL,Acer platanoides,Norway Maple,Full,-85.60143289,42.29043383
+74,1151,GIBI,Ginkgo biloba,Ginkgo,Full,-85.60184646,42.29044404
+75,1152,GIBI,Ginkgo biloba,Ginkgo,Full,-85.60194268,42.2904465
+76,,,,,,-85.60207272,42.29043159
+77,,,,,,-85.60222718,42.29042525
+78,1173,ACPL,Acer platanoides,Norway Maple,Partial,-85.6024127,42.2904211
+79,1172,ACPL,Acer platanoides,Norway Maple,Partial,-85.60249991,42.29042427
+80,1104,SYRE,Syringa reticulata,Japanese Lilac,Partial,-85.60042624,42.29061188
+81,1105,SYRE,Syringa reticulata,Japanese Lilac,Shade,-85.60038467,42.29063836
+82,1106,SYRE,Syringa reticulata,Japanese Lilac,Partial,-85.60034466,42.29064651
+83,1107,SYRE,Syringa reticulata,Japanese Lilac,Partial,-85.60031229,42.29064792
+84,1115,PINI,Pinus nigra,Austrian Pine,Partial,-85.60008269,42.29092004
+85,1120,PINI,Pinus nigra,Austrian Pine,Partial,-85.60000886,42.29089666
+86,1121,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60001278,42.2908229
+87,1122,ULAM,Ulmus americana,American Elm,Partial,-85.60001173,42.29080866
+88,1123,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.59996859,42.29081559
+89,1125,ULAM,Ulmus americana,American Elm,Partial,-85.59997278,42.29084354
+90,1119,ULAM,Ulmus americana,American Elm,Partial,-85.60000099,42.29091206
+91,1118,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.59261183,42.29093534
+92,1117,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.6000037,42.29094257
+93,1124,ACPL,Acer platanoides,Norway Maple,Partial,-85.59992681,42.29084813
+94,1224,GLTR,Gleditsia triacanthos,Honeylocust,Shade,-85.59976659,42.29060275
+95,1190,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.59980727,42.2905223
+96,,,,,,-85.59970355,42.29047852
+97,,,,,,-85.59968953,42.29048482
+98,,,,,,-85.59965325,42.29048065
+99,,,,,,-85.59952282,42.29049316
+100,,,,,,-85.5995036,42.29048862
+101,1196,FASY,Fagus sylvatica,European Beech,Full,-85.59937577,42.29065034
+102,1219,QUAL,Quercus alba,White Oak,Full,-85.59914594,42.29057734
+103,1218,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59917037,42.29077209
+104,1217,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59927795,42.29079326
+105,1225,ACRU,Acer rubrum,Red Maple,Full,-85.59956547,42.29082495
+106,,,,,,-85.59967423,42.29094769
+107,1228,ACSA7,Acer saccharum,Sugar Maple,Partial,-85.59956699,42.29094248
+108,1229,ACPL,Acer platanoides,Norway Maple,Partial,-85.59947517,42.29092416
+109,1232,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.59943736,42.29123579
+110,1230,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.59949765,42.29130787
+111,1231,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.59941432,42.29128886
+112,607,QUAL,Quercus alba,White Oak,Partial,-85.60223295,42.29000363
+113,610,ACPL,Acer platanoides,Norway Maple,Partial,-85.60226941,42.28996448
+114,608,QUAL,Quercus alba,White Oak,Partial,-85.60230056,42.28997106
+115,609,QUAL,Quercus alba,White Oak,Partial,-85.60238936,42.29000575
+116,612,PINI,Pinus nigra,Austrian Pine,Partial,-85.60235904,42.2899577
+117,615,MA3,Malus spp.,Crab Apple,Partial,-85.60247749,42.28994793
+118,616,CRDO,Crataegus douglasii,Black Hawthorn,Partial,-85.60247715,42.28987577
+119,617,,,,,-85.60250122,42.28969825
+120,631,QUAL,Quercus alba,White Oak,Partial,-85.60225832,42.28985453
+121,630,QUAL,Quercus alba,White Oak,Partial,-85.60230104,42.28976034
+122,629,QUAL,Quercus alba,White Oak,Partial,-85.60231278,42.28969882
+123,628,QUAL,Quercus alba,White Oak,Partial,-85.60228391,42.28969246
+124,626,QUAL,Quercus alba,White Oak,Partial,-85.60229161,42.28964005
+125,625,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60233311,42.28964913
+126,624,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60233003,42.28960048
+127,618,THOC,Thuja occidentalis,Northern White Cedar,Partial,-85.60248832,42.28949653
+128,619,PYCA,Pyrus calleryana,Callery Pear,Full,-85.60253914,42.28941706
+129,621,QUAL,Quercus alba,White Oak,Partial,-85.60227075,42.2894912
+130,622,QUAL,Quercus alba,White Oak,Partial,-85.60228759,42.28952801
+131,623,QUAL,Quercus alba,White Oak,Partial,-85.60219051,42.28955836
+132,627,QUAL,Quercus alba,White Oak,Partial,-85.60218528,42.289624
+133,634,QURU,Quercus rubra,Red Oak,Partial,-85.60215381,42.28969671
+134,635,QURU,Quercus rubra,Red Oak,Partial,-85.60204605,42.28965441
+135,636,QUAL,Quercus alba,White Oak,Partial,-85.60203419,42.289738
+136,633,QURU,Quercus rubra,Red Oak,Partial,-85.60210837,42.2897988
+137,632,LITU,Liriodendron tulipifera,Tuliptree,Partial,-85.60215511,42.28988693
+138,637,QUAL,Quercus alba,White Oak,Partial,-85.60203061,42.28981968
+139,639,QUAL,Quercus alba,White Oak,Partial,-85.6019071,42.28984247
+140,,,,,,-85.60187235,42.28980137
+141,640,QUAL,Quercus alba,White Oak,Partial,-85.60180704,42.28986754
+142,641,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60175061,42.28987952
+143,642,PRSU,Prunus subhirtella,Weeping Cherry,Partial,-85.60168369,42.28988235
+144,643,MA4,Malus spp.,Crab Apple,Partial,-85.60166377,42.28994709
+145,650,QURU,Quercus rubra,Red Oak,Partial,-85.60168325,42.28978456
+146,644,COKO,Cornus kousa,Kousa Dogwood,Shade,-85.60158938,42.28982265
+147,645,QURU,Quercus rubra,Red Oak,Partial,-85.60152625,42.28984977
+148,648,QUAL,Quercus alba,White Oak,Partial,-85.60145435,42.28974952
+149,647,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.6013971,42.28979413
+150,646,QUAL,Quercus alba,White Oak,Partial,-85.60134431,42.28986598
+151,651,MA5,Malus spp.,Crab Apple,Partial,-85.60133531,42.28997572
+152,688,MA12,Malus spp.,Crab Apple,Partial,-85.601906,42.28958229
+153,,,,,,-85.60184919,42.28954159
+154,689,MEGL,Metasequoia glyptostroboides,Dawn Redwood,Partial,-85.60190985,42.28950454
+155,687,QURU,Quercus rubra,Red Oak,Partial,-85.60203703,42.28953281
+156,686,QURU,Quercus rubra,Red Oak,Partial,-85.60214655,42.28946403
+157,684,PRSE13,Prunus serotina,Black Cherry,Partial,-85.60223952,42.28940998
+158,685,PRSE14,Prunus serotina,Black Cherry,Shade,-85.60220222,42.28940318
+159,692,QUAL,Quercus alba,White Oak,Partial,-85.60210059,42.28934922
+160,693,QUAL,Quercus alba,White Oak,Partial,-85.60203444,42.28935723
+161,691,QURU,Quercus rubra,Red Oak,Partial,-85.60195188,42.28941033
+162,710,PIPU,Picea pungens,Blue Spruce,Partial,-85.60213731,42.2892457
+163,711,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.60223722,42.28909995
+164,712,QUAL,Quercus alba,White Oak,Partial,-85.6021574,42.28911258
+165,720,QUAL,Quercus alba,White Oak,Partial,-85.60209778,42.28921203
+166,719,QURU,Quercus rubra,Red Oak,Partial,-85.60206618,42.28919199
+167,709,QURU,Quercus rubra,Red Oak,Partial,-85.60204352,42.28924453
+168,708,QURU,Quercus rubra,Red Oak,Partial,-85.60202074,42.28922608
+169,704,QURU,Quercus rubra,Red Oak,Partial,-85.60201215,42.28928367
+170,705,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60202076,42.28929385
+171,707,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60197921,42.28926285
+172,706,QUAL,Quercus alba,White Oak,Partial,-85.60189981,42.28932616
+173,717,QURU,Quercus rubra,Red Oak,Partial,-85.60202582,42.28916562
+174,718,QURU,Quercus rubra,Red Oak,Partial,-85.6020212,42.28917673
+175,714,QURU,Quercus rubra,Red Oak,Partial,-85.6019621,42.28911263
+176,715,QUAL,Quercus alba,White Oak,Partial,-85.60190726,42.28910968
+177,718,QURU,Quercus rubra,Red Oak,Partial,-85.60187375,42.28910298
+178,733,QURU,Quercus rubra,Red Oak,Partial,-85.60192627,42.28919201
+179,732,QURU,Quercus rubra,Red Oak,Partial,-85.6019048,42.28918931
+180,731,QURU,Quercus rubra,Red Oak,Partial,-85.60179701,42.28913424
+181,730,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60183841,42.28922225
+182,729,QURU,Quercus rubra,Red Oak,Partial,-85.60180817,42.28920687
+183,728,QUAL,Quercus alba,White Oak,Partial,-85.60178775,42.28918227
+184,727,QUAL,Quercus alba,White Oak,Partial,-85.60172197,42.28915577
+185,726,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60167931,42.28918772
+186,725,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60172473,42.28919008
+187,724,QURU,Quercus rubra,Red Oak,Partial,-85.60174431,42.28923651
+188,723,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60169346,42.28924359
+189,722,QURU,Quercus rubra,Red Oak,Partial,-85.60172903,42.28927229
+190,721,QURU,Quercus rubra,Red Oak,Partial,-85.60177443,42.28925195
+191,694,FAGR,Fagus grandifolia,American Beech,Partial,-85.60169822,42.28936556
+192,695,QUAL,Quercus alba,White Oak,Partial,-85.60158371,42.28936537
+193,696,QURU,Quercus rubra,Red Oak,Shade,-85.60148103,42.28938423
+194,697,MA13,Malus spp.,Crab Apple,Partial,-85.60146753,42.28944618
+195,699,QUAL,Quercus alba,White Oak,Full,-85.60132896,42.28933859
+196,,,,,,-85.60175036,42.28908774
+197,737,QUAL,Quercus alba,White Oak,Partial,-85.60165196,42.28912653
+198,736,PRSU,Prunus subhirtella,Weeping Cherry,Partial,-85.60149858,42.28908595
+199,735,QURU,Quercus rubra,Red Oak,Partial,-85.60151471,42.28915266
+200,734,QURU,Quercus rubra,Red Oak,Partial,-85.60153307,42.28922788
+201,698,COKO,Cornus kousa,Kousa Dogwood,Partial,-85.60138027,42.28925371
+202,700,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.60136672,42.28944413
+203,711,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.60136052,42.28954649
+204,702,MA15,Malus spp.,Crab Apple,Partial,-85.60142844,42.28973651
+205,782,QUIM,Quercus imbricaria,Shingle Oak,Partial,-85.60123352,42.2898117
+206,783,QUMA1,Quercus macrocarpa,Bur Oak,Partial,-85.60114515,42.28988066
+207,763,ACPA,Acer palmatum,Japanese Maple,Partial,-85.60120943,42.28995964
+208,789,QURU,Quercus rubra,Red Oak,Partial,-85.60097548,42.28983993
+209,788,QUMA2,Quercus macrocarpa,Bur Oak,Partial,-85.60088208,42.2898916
+210,762,MA21,Malus spp.,Crab Apple,Partial,-85.60085534,42.28999127
+211,761,MA20,Malus spp.,Crab Apple,Partial,-85.60081548,42.28995643
+212,785,QURU,Quercus rubra,Red Oak,Partial,-85.60102986,42.28969599
+213,775,FAGR,Fagus grandifolia,American Beech,Partial,-85.60117794,42.28949399
+214,774,QUAL,Quercus alba,White Oak,Partial,-85.60114612,42.28939559
+215,772,QURU,Quercus rubra,Red Oak,Partial,-85.60105642,42.2893433
+216,777,QURU,Quercus rubra,Red Oak,Partial,-85.60099956,42.28943375
+217,771,QURU,Quercus rubra,Red Oak,Partial,-85.60083972,42.28934671
+218,780,QURU,Quercus rubra,Red Oak,Partial,-85.60068635,42.28940749
+219,779,QUAL,Quercus alba,White Oak,Partial,-85.60075342,42.28952368
+220,778,QUAL,Quercus alba,White Oak,Partial,-85.60082403,42.28949348
+221,781,QURU,Quercus rubra,Red Oak,Partial,-85.60091106,42.28953996
+222,776,QUAL,Quercus alba,White Oak,Partial,-85.60105997,42.28950706
+223,786,QURU,Quercus rubra,Red Oak,Partial,-85.60092553,42.28963615
+224,787,QURU,Quercus rubra,Red Oak,Partial,-85.60074737,42.28970641
+225,790,FAGR,Fagus grandifolia,American Beech,Partial,-85.60074089,42.28982701
+226,760,QUAL,Quercus alba,White Oak,Partial,-85.60066467,42.2899488
+227,791,QUAL,Quercus alba,White Oak,Partial,-85.60060547,42.28985778
+228,792,QUPA,Quercus palustris,Pin Oak,Partial,-85.60058296,42.28975522
+229,793,QURU,Quercus rubra,Red Oak,Partial,-85.60065319,42.28963168
+230,796,QUAL,Quercus alba,White Oak,Partial,-85.60046689,42.28988452
+231,797,QUAL,Quercus alba,White Oak,Partial,-85.60040449,42.28986362
+232,795,QUAL,Quercus alba,White Oak,Partial,-85.60048496,42.28985654
+233,794,QURU,Quercus rubra,Red Oak,Partial,-85.60046602,42.28977598
+234,813,QURU,Quercus rubra,Red Oak,Partial,-85.60027818,42.28978115
+235,812,QURU,Quercus rubra,Red Oak,Partial,-85.60036845,42.28969578
+236,993,QURU,Quercus rubra,Red Oak,Partial,-85.60047934,42.28959527
+237,802,QURU,Quercus rubra,Red Oak,Partial,-85.60052122,42.28945365
+238,801,QUMA3,Quercus macrocarpa,Bur Oak,Partial,-85.6004587,42.28932883
+239,764,MA22,Malus spp.,Crab Apple,Partial,-85.60041926,42.28928304
+240,765,MA23,Malus spp.,Crab Apple,Partial,-85.60034134,42.28933479
+241,766,MA24,Malus spp.,Crab Apple,Partial,-85.60019549,42.28928512
+242,767,MA25,Malus spp.,Crab Apple,Partial,-85.60015583,42.28928006
+243,809,QURU,Quercus rubra,Red Oak,Partial,-85.60017552,42.28931533
+244,810,QURU,Quercus rubra,Red Oak,Partial,-85.60030888,42.28935699
+245,803,QUAL,Quercus alba,White Oak,Partial,-85.60038214,42.28945824
+246,804,QUAL,Quercus alba,White Oak,Partial,-85.60032145,42.28949649
+247,803,QUAL,Quercus alba,White Oak,Partial,-85.60013575,42.28938577
+248,807,QURU,Quercus rubra,Red Oak,Partial,-85.59997522,42.28937951
+249,768,PYCA,Pyrus calleryana,Callery Pear,Full,-85.60000082,42.28924304
+250,806,PYCA,Pyrus calleryana,Callery Pear,Full,-85.59978663,42.28932652
+251,805,QURU,Quercus rubra,Red Oak,Full,-85.59976092,42.28945742
+252,816,QURU,Quercus rubra,Red Oak,Partial,-85.6000343,42.28973049
+253,814,QURU,Quercus rubra,Red Oak,Partial,-85.52880881,42.28981386
+254,815,QURU,Quercus rubra,Red Oak,Full,-85.59983081,42.28975007
+255,820,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.59967988,42.28979821
+256,817,MA26,Malus spp.,Crab Apple,Partial,-85.59951947,42.28933124
+257,992,PINI,Pinus nigra,Austrian Pine,Partial,-85.59957696,42.28918301
+258,991,QUAL,Quercus alba,White Oak,Partial,-85.59945301,42.2892147
+259,854,QUAL,Quercus alba,White Oak,Full,-85.59931178,42.28955138
+260,846,QUPA,Quercus palustris,Pin Oak,Partial,-85.59923814,42.28964503
+261,845,QUIM,Quercus imbricaria,Shingle Oak,Full,-85.59911322,42.28968965
+262,847,QUAL,Quercus alba,White Oak,Partial,-85.59916649,42.28975523
+263,844,QUAL,Quercus alba,White Oak,Partial,-85.59906912,42.28974876
+264,843,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.59904223,42.2898396
+265,851,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.59909583,42.28994799
+266,850,QUAL,Quercus alba,White Oak,Partial,-85.59922948,42.28986403
+267,849,QUAL,Quercus alba,White Oak,Full,-85.59929703,42.28983482
+268,848,PRSE15,Prunus serotina,Black Cherry,Partial,-85.59924998,42.28978273
+269,,,,,,-85.59926565,42.28976409
+270,308,QUAL,Quercus alba,White Oak,Full,-85.60403815,42.28989371
+271,307,ROPS,Robinia pseudoacacia,Black Locust,Full,-85.60416691,42.28958637
+272,306,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60407008,42.28938587
+273,305,QUAL,Quercus alba,White Oak,Partial,-85.60414717,42.28928132
+274,304,QUAL,Quercus alba,White Oak,Partial,-85.60409052,42.28931031
+275,303,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60407848,42.28927289
+276,302,QUAL,Quercus alba,White Oak,Partial,-85.60408663,42.28926137
+277,301,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60406613,42.28923226
+278,300,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60408013,42.28922132
+279,299,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60412271,42.28919097
+280,290,ACPL,Acer platanoides,Norway Maple,Partial,-85.60414343,42.28916595
+281,291,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60413093,42.2891427
+282,,,,,,-85.60411002,42.28914151
+283,288,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60406996,42.28913391
+284,292,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60412366,42.2891051
+285,285,QUAL,Quercus alba,White Oak,Partial,-85.60403517,42.2891398
+286,284,QUAL,Quercus alba,White Oak,Partial,-85.60400089,42.28907251
+287,286,QURU,Quercus rubra,Northern Red Oak,Partial,-85.6040494,42.28905883
+288,287,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60405307,42.28908738
+289,294,QUAL,Quercus alba,White Oak,Partial,-85.60407617,42.28903133
+290,293,PINI,Pinus nigra,Austrian Pine,Partial,-85.60412398,42.28904601
+291,281,PINI,Pinus nigra,Austrian Pine,Partial,-85.60409875,42.28901962
+292,290,ACPL,Acer platanoides,Norway Maple,Partial,-85.60406122,42.28901813
+293,279,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60403862,42.28904378
+294,283,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60396189,42.28900372
+295,282,QUAL,Quercus alba,White Oak,Partial,-85.60390839,42.28895283
+296,278,QUAL,Quercus alba,White Oak,Partial,-85.60406255,42.28899259
+297,276,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60412508,42.2889557
+298,269,ACPL,Acer platanoides,Norway Maple,Partial,-85.60411436,42.28893808
+299,270,PINI,Pinus nigra,Austrian Pine,Partial,-85.60408926,42.28897135
+300,277,ACPL,Acer platanoides,Norway Maple,Partial,-85.60409626,42.28897142
+301,271,QUAL,Quercus alba,White Oak,Partial,-85.60404874,42.2889465
+302,272,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60400971,42.28894267
+303,273,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60403795,42.28890974
+304,274,ACPL,Acer platanoides,Norway Maple,Partial,-85.60402879,42.28889136
+305,275,ACPL,Acer platanoides,Norway Maple,Partial,-85.60405209,42.28888732
+306,268,MOAL,Morus alba,White Mulberry,Partial,-85.60407449,42.28886743
+307,267,ACPL,Acer platanoides,Norway Maple,Partial,-85.6039651,42.28880842
+308,266,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60384614,42.28884061
+309,264,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60372587,42.28880599
+310,263,QUAL,Quercus alba,White Oak,Partial,-85.60347961,42.2888407
+311,265,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60341902,42.28882385
+312,262,QUAL,Quercus alba,White Oak,Partial,-85.60323885,42.28881112
+313,261,QUAL,Quercus alba,White Oak,Partial,-85.60313616,42.28881899
+314,,,,,,-85.60313878,42.2889513
+315,350,JUNI,Juglans nigra,Black Walnut,Partial,-85.60306614,42.28898836
+316,348,COFL,Cornus florida,Florida Dogwood,Partial,-85.60306693,42.28897039
+317,351,ULAM,Ulmus americana,American Elm,Partial,-85.60306554,42.289002
+318,349,QUAL,Quercus alba,White Oak,Partial,-85.60303925,42.28893859
+319,259,QUAL,Quercus alba,White Oak,Partial,-85.60306007,42.28884897
+320,258,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60305212,42.28881765
+321,257,ACPL,Acer platanoides,Norway Maple,Partial,-85.60297587,42.28881301
+322,256,PRSE7,Prunus serotina,Black Cherry,Partial,-85.60294084,42.2888175
+323,255,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60292003,42.28881531
+324,254,ACPL,Acer platanoides,Norway Maple,Partial,-85.60287527,42.28882682
+325,251,JUNI,Juglans nigra,Black Walnut,Partial,-85.60274608,42.28884671
+326,250,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60266696,42.28886483
+327,249,ULAM,Ulmus americana,American Elm,Partial,-85.60265198,42.28887258
+328,248,TIPL,Tilia platyphyllos,Big Leaf Linden,Partial,-85.60259486,42.28893978
+329,247,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60259547,42.28897591
+330,253,AEHI,Aesculus hippocastanum,Horse Chestnut,Partial,-85.60266635,42.2889973
+331,252,JUNI,Juglans nigra,Black Walnut,Partial,-85.60270302,42.28894741
+332,244,QUAL,Quercus alba,White Oak,Full,-85.60258914,42.28931647
+333,245,QUAL,Quercus alba,White Oak,Partial,-85.60259551,42.28919122
+334,246,QUAL,Quercus alba,White Oak,Partial,-85.60257607,42.28907949
+335,352,ACPL,Acer platanoides,Norway Maple,Partial,-85.60298112,42.28900902
+336,346,QUAL,Quercus alba,White Oak,Partial,-85.60339492,42.28897676
+337,345,QUAL,Quercus alba,White Oak,Partial,-85.60341208,42.28899595
+338,343,QUAL,Quercus alba,White Oak,Partial,-85.60347981,42.28896325
+339,342,MOAL,Morus alba,White Mulberry,Partial,-85.60353901,42.28898384
+340,1020,PRSU,Prunus subhirtella,Weeping Cherry,Full,-85.6010514,42.29221911
+341,1021,ACPL,Acer platanoides,Norway Maple,Full,-85.60095359,42.29216076
+342,1022,ACPL,Acer platanoides,Norway Maple,Full,-85.60098991,42.29189589
+343,1023,ACSA4,Acer saccharum,Sugar Maple,Full,-85.60106047,42.29177725
+344,1066,FASY,Fagus sylvatica,European Beech,Partial,-85.60115563,42.29156752
+345,1065,FASY,Fagus sylvatica,European Beech,Partial,-85.60115598,42.29157625
+346,1064,FASY,Fagus sylvatica,European Beech,Partial,-85.60112595,42.29159085
+347,1063,FASY,Fagus sylvatica,European Beech,Partial,-85.60115766,42.29160136
+348,1062,FASY,Fagus sylvatica,European Beech,Partial,-85.60116379,42.29159535
+349,1061,FASY,Fagus sylvatica,European Beech,Partial,-85.60118404,42.29159904
+350,1060,FASY,Fagus sylvatica,European Beech,Partial,-85.60118856,42.29159016
+351,1059,FASY,Fagus sylvatica,European Beech,Partial,-85.60121503,42.291603
+352,1058,FASY,Fagus sylvatica,European Beech,Partial,-85.60124193,42.29160639
+353,1057,FASY,Fagus sylvatica,European Beech,Partial,-85.60126293,42.29159065
+354,1056,FASY,Fagus sylvatica,European Beech,Partial,-85.60125076,42.2915947
+355,1055,FASY,Fagus sylvatica,European Beech,Partial,-85.60127055,42.29160081
+356,1054,FASY,Fagus sylvatica,European Beech,Partial,-85.60130371,42.29160425
+357,1037,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.6014588,42.29163134
+358,1038,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60147311,42.29164465
+359,1039,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60146348,42.29165076
+360,1040,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60146942,42.29166819
+361,1041,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60147508,42.29169799
+362,1042,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60143733,42.29169495
+363,1043,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.6014391,42.29169567
+364,1044,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60140544,42.29168469
+365,1045,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60137523,42.29168754
+366,1046,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60135308,42.291676
+367,1047,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60133125,42.2916943
+368,1048,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60131569,42.29167042
+369,1049,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.6013182,42.29166755
+370,1050,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60132589,42.29165478
+371,1051,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60132946,42.2916427
+372,1052,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60133287,42.29163507
+373,1053,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60130292,42.29160644
+374,1036,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60149394,42.29158479
+375,1034,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60160111,42.29163945
+376,1033,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60161145,42.29160793
+377,1025,MEGL,Metasequoia glyptostroboides,Dawn Redwood,Partial,-85.60163942,42.29165372
+378,1032,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60164562,42.2916487
+379,1031,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60166307,42.29163057
+380,1030,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60166758,42.29161876
+381,1029,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.6016513,42.29155675
+382,1028,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60164802,42.29156345
+383,1027,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60162613,42.29153535
+384,1026,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60162587,42.29154317
+385,382,ACPL,Acer platanoides,Norway Maple,Partial,-85.60119249,42.29148534
+386,383,PRSE9,Prunus serotina,Black Cherry,Partial,-85.60112113,42.29147842
+387,1069,FASY,Fagus sylvatica,European Beech,Partial,-85.60114981,42.29151295
+388,1068,FASY,Fagus sylvatica,European Beech,Partial,-85.60114838,42.29154526
+389,1067,FASY,Fagus sylvatica,European Beech,Partial,-85.60113267,42.29154872
+390,384,PISY,Pinus sylvestris,Scotch Pine,Partial,-85.60111571,42.29141464
+391,381,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60120341,42.29145485
+392,380,ACPL,Acer platanoides,Norway Maple,Partial,-85.60125318,42.29144647
+393,379,ACPL,Acer platanoides,Norway Maple,Partial,-85.60128776,42.29149741
+394,378,ACPL,Acer platanoides,Norway Maple,Partial,-85.60129247,42.2914412
+395,546,ACSA3,Acer saccharum,Sugar Maple,Partial,-85.60310489,42.2902453
+396,545,ACSA2,Acer saccharum,Sugar Maple,Partial,-85.60311396,42.29027363
+397,543,ACPL,Acer platanoides,Norway Maple,Partial,-85.60313782,42.29025792
+398,542,ACPL,Acer platanoides,Norway Maple,Partial,-85.60319148,42.29026273
+399,537,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60322995,42.29022034
+400,538,TIAM,Tilia americana,American Basswood,Partial,-85.60318068,42.29019401
+401,539,QURU,Quercus rubra,Red Oak,Partial,-85.60314715,42.29016184
+402,342,MOAL,Morus alba,White Mulberry,Partial,-85.60310975,42.29016185
+403,531,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60311846,42.29014473
+404,549,QURU,Quercus rubra,Red Oak,Partial,-85.60310681,42.2901071
+405,536,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60310448,42.29008397
+406,535,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60314055,42.29007698
+407,534,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60314543,42.29010086
+408,528,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60317874,42.290111
+409,527,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60320484,42.29010165
+410,523,QUAL,Quercus alba,White Oak,Partial,-85.60330114,42.29008518
+411,,,,,,-85.60330391,42.29007195
+412,526,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60324425,42.29014085
+413,529,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60316715,42.29014751
+414,533,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60315029,42.29013588
+415,530,PIST,Pinus strobus,Eastern White Pine,Shade,-85.60314442,42.29015109
+416,583,QUAL,Quercus alba,White Oak,Partial,-85.60263214,42.29023891
+417,,,,,,-85.60258711,42.2902628
+418,,,,,,-85.60253821,42.29025938
+419,546,ACSA3,Acer saccharum,Sugar Maple,Partial,-85.60247227,42.29025703
+420,590,QUAL,Quercus alba,White Oak,Partial,-85.60252969,42.29021813
+421,597,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60251501,42.29018674
+422,598,QUAL,Quercus alba,White Oak,Partial,-85.60251065,42.29016299
+423,599,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60248088,42.2901508
+424,582,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.60264978,42.29014636
+425,600,QUAL,Quercus alba,White Oak,Partial,-85.60248851,42.29009571
+426,602,QUAL,Quercus alba,White Oak,Partial,-85.60252769,42.29005961
+427,581,QURU,Quercus rubra,Red Oak,Partial,-85.60260839,42.29000726
+428,614,QUAL,Quercus alba,White Oak,Partial,-85.60248438,42.28998501
+429,613,PINI,Pinus nigra,Austrian Pine,Partial,-85.60244169,42.29001035
+430,611,QUAL,Quercus alba,White Oak,Partial,-85.60239694,42.29003737
+431,605,ACPL,Acer platanoides,Norway Maple,Partial,-85.60237686,42.29009124
+432,596,QUAL,Quercus alba,White Oak,Partial,-85.60239473,42.29012297
+433,604,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60230946,42.29012197
+434,603,ACPL,Acer platanoides,Norway Maple,Partial,-85.60229936,42.29010338
+435,595,QUAL,Quercus alba,White Oak,Partial,-85.6023388,42.29017444
+436,594,QURU,Quercus rubra,Red Oak,Partial,-85.60238485,42.2901951
+437,593,ULAM,Ulmus americana,American Elm,Partial,-85.60241926,42.2901857
+438,592,TIAM,Tilia americana,American Basswood,Partial,-85.60241908,42.29021272
+439,587,QURU,Quercus rubra,Red Oak,Partial,-85.60239345,42.2902515
+440,588,QURU,Quercus rubra,Red Oak,Partial,-85.60235426,42.29027011
+441,589,QURU,Quercus rubra,Red Oak,Partial,-85.60233802,42.2902374
+442,683,QUAL,Quercus alba,White Oak,Partial,-85.60226605,42.29018338
+443,680,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60223101,42.29017341
+444,679,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60219183,42.2901628
+445,681,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60221511,42.29019004
+446,682,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60221509,42.29018962
+447,676,THOC,Thuja occidentalis,Northern White Cedar,Partial,-85.60217685,42.29019647
+448,677,TSCA,Tsuga canadensis,Eastern Hemlock,Partial,-85.60224533,42.29022361
+449,676,THOC,Thuja occidentalis,Northern White Cedar,Partial,-85.60222607,42.29024548
+450,673,MOAL,Morus alba,White Mulberry,Partial,-85.60216857,42.29020768
+451,674,MA11,Malus spp.,Crab Apple,Partial,-85.60204875,42.29027419
+452,673,MOAL,Morus alba,White Mulberry,Partial,-85.60193298,42.29028464
+453,672,MOAL,Morus alba,White Mulberry,Partial,-85.60184748,42.29029238
+454,1255,MA52,Malus spp.,Crab Apple,Partial,-85.59852942,42.29171122
+455,1260,ACPL,Acer platanoides,Norway Maple,Partial,-85.59815574,42.29191902
+456,1262,MA55,Malus spp.,Crab Apple,Partial,-85.59803024,42.29194355
+457,1263,JUNI,Juglans nigra,Black Walnut,Partial,-85.5979513,42.29193804
+458,1264,MA56,Malus spp.,Crab Apple,Partial,-85.59782116,42.2919006
+459,1280,JUNI,Juglans nigra,Black Walnut,Partial,-85.59809143,42.2916429
+460,,,,,,-85.59810183,42.29161444
+461,1246,FAGR,Fagus grandifolia,American Beech,Partial,-85.59848216,42.29127635
+462,1245,GLTR,Gleditsia triacanthos,Honeylocust,Partial,-85.59843909,42.29126324
+463,1244,ACPL,Acer platanoides,Norway Maple,Partial,-85.59831226,42.29125197
+464,1243,ACPL,Acer platanoides,Norway Maple,Partial,-85.59831139,42.29115733
+465,1274,ACSA9,Acer saccharum,Sugar Maple,Partial,-85.59803644,42.29107657
+466,1273,ACSA8,Acer saccharum,Sugar Maple,Partial,-85.59791892,42.29102457
+467,1276,AIAL,Ailanthus altissima,Tree of Heaven,Full,-85.59794151,42.29140861
+468,1275,JUNI,Juglans nigra,Black Walnut,Partial,-85.59810006,42.29142629
+469,1287,PISY,Pinus sylvestris,Scotch Pine,Partial,-85.59811602,42.29148801
+470,1286,ACSA10,Acer saccharum,Sugar Maple,Partial,-85.59809767,42.29155606
+471,1284,ULAM,Ulmus americana,American Elm,Partial,-85.5980836,42.29156525
+472,1285,ULAM,Ulmus americana,American Elm,Partial,-85.59812276,42.29151252
+473,1283,QUAL,Quercus alba,White Oak,Partial,-85.59811545,42.29160481
+474,1282,JUNI,Juglans nigra,Black Walnut,Partial,-85.59805826,42.29157728
+475,1279,TIAM,Tilia americana,American Basswood,Partial,-85.5980095,42.29160102
+476,,,,,,-85.5978702,42.29155912
+477,1266,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.59749929,42.29166834
+478,1267,ACPL,Acer platanoides,Norway Maple,Full,-85.59755068,42.2913039
+479,1269,MA57,Malus spp.,Crab Apple,Partial,-85.59758898,42.29119969
+480,1268,TICO,Tilia cordata,Little Leaf Linden,Partial,-85.59755871,42.29114922
+481,1270,MA58,Malus spp.,Crab Apple,Partial,-85.5976379,42.29111802
+482,1271,MA59,Malus spp.,Crab Apple,Partial,-85.59765392,42.29101763
+483,1272,PSME,Pseudotsuga menziesii,Douglas-fir,Full,-85.59767136,42.29098367
+484,,,,,,-85.59761285,42.29060785
+485,,,,,,-85.59729498,42.29049996
+486,1300,PRSE18,Prunus serotina,Black Cherry,Partial,-85.59652878,42.29096256
+487,1297,BENI,Betula nigra,River birch,Partial,-85.5963039,42.29097448
+488,1296,ACRU,Acer rubrum,Red Maple,Full,-85.59629734,42.29100996
+489,1337,BENI,Betula nigra,River birch,Partial,-85.59654359,42.29123221
+490,1336,BENI,Betula nigra,River birch,Partial,-85.59658287,42.29131617
+491,1334,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59667329,42.29145484
+492,1333,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59674667,42.29144444
+493,1332,ABFR,Abies fraseri,Fraser Fir,Partial,-85.5967834,42.29147092
+494,1331,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59682206,42.29146315
+495,1330,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59686056,42.29148991
+496,1329,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59685425,42.29146577
+497,1328,ABFR,Abies fraseri,Fraser Fir,Full,-85.59705805,42.29149741
+498,1293,,,,,-85.59708034,42.29148337
+499,1323,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.59714915,42.29147903
+500,1326,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59713543,42.29149699
+501,1322,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.59716646,42.29147471
+502,1321,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.5971817,42.29148063
+503,1324,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59719579,42.29151198
+504,1320,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.5972327,42.29147872
+505,1319,ABFR,Abies fraseri,Fraser Fir,Partial,-85.59725994,42.29152264
+506,1317,BENI,Betula nigra,River birch,Partial,-85.59731028,42.29161997
+507,1316,BENI,Betula nigra,River birch,Partial,-85.5972652,42.29169085
+508,,,,,,-85.5972935,42.29175738
+509,1314,ACGR,Acer griseum,Paperbark Maple,Partial,-85.59718943,42.29182739
+510,1313,ACGR,Acer griseum,Paperbark Maple,Full,-85.59686735,42.29179501
+511,1312,ACGR,Acer griseum,Paperbark Maple,Full,-85.59678288,42.29177627
+512,1311,ACGR,Acer griseum,Paperbark Maple,Full,-85.59669181,42.29176241
+513,,,,,,-85.5974108,42.29143232
+514,,,,,,-85.59743931,42.29133999
+515,1341,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59737461,42.29123718
+516,1342,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59737335,42.29122695
+517,1343,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59739093,42.29119743
+518,,,,,,-85.59745833,42.29116499
+519,1345,ACPL,Acer platanoides,Norway Maple,Full,-85.59746676,42.29104064
+520,,,,,,-85.59745756,42.29081022
+521,,,,,,-85.59742548,42.29070125
+522,836,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.59747427,42.29038365
+523,835,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.59762482,42.29038538
+524,834,PYCA,Pyrus calleryana,Callery Pear,Partial,-85.59782055,42.29038063
+525,832,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.59785189,42.29032163
+526,831,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59790965,42.29031109
+527,,,,,,-85.59801447,42.29034082
+528,830,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59802217,42.29031737
+529,829,PIST,Pinus strobus,Eastern White Pine,Partial,-85.59814451,42.2903092
+530,828,PIAB,Picea abies,Norway Spruce,Partial,-85.59822783,42.29031654
+531,827,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.59833382,42.29032905
+532,825,PYCA,Pyrus calleryana,Callery Pear,Full,-85.59891007,42.29030304
+533,823,LITU,Liriodendron tulipifera,Tuliptree,Full,-85.59909619,42.29023998
+534,822,QUMA4,Quercus macrocarpa,Bur Oak,Full,-85.5993257,42.29024089
+535,755,MA19,Malus spp.,Crab Apple,Full,-85.60028968,42.29023569
+536,754,QUAL,Quercus alba,White Oak,Full,-85.60046542,42.29019932
+537,750,QUAL,Quercus alba,White Oak,Partial,-85.6006203,42.29009183
+538,749,QUAL,Quercus alba,White Oak,Partial,-85.60059927,42.28998466
+539,747,MA17,Malus spp.,Crab Apple,Partial,-85.600657,42.28996304
+540,746,MA16,Malus spp.,Crab Apple,Partial,-85.6006985,42.28997022
+541,744,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.60063798,42.29002991
+542,745,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.60066276,42.29005526
+543,743,PIGL1,Picea glauca,White Spruce,Partial,-85.60070087,42.29005906
+544,742,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.60066905,42.29011813
+545,741,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.6006541,42.29014555
+546,740,CECA,Cercis canadensis,Eastern Redbud,Partial,-85.60075067,42.29013992
+547,739,COFL,Cornus Florida,Florida dogwood,Shade,-85.60077984,42.29015213
+548,752,FAGR,Fagus grandifolia,American Beech,Partial,-85.60075227,42.29017994
+549,751,QUAL,Quercus alba,White Oak,Partial,-85.60065373,42.29016873
+550,753,QUAL,Quercus alba,White Oak,Partial,-85.60072075,42.29026179
+551,,,,,,-85.60349616,42.289778
+552,2,QUAL,Quercus alba,White Oak,Partial,-85.60351404,42.28971417
+553,4,ACPL,Acer platanoides,Norway Maple,Partial,-85.6035173,42.28971154
+554,,,,,,-85.60352873,42.28969459
+555,6,ACPL,Acer platanoides,Norway Maple,Partial,-85.60354592,42.28970562
+556,7,ULAM,Ulmus americana,American Elm,Partial,-85.60360159,42.2897181
+557,10,ULAM,Ulmus americana,American Elm,Partial,-85.60361351,42.28971525
+558,9,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60361265,42.28974174
+559,8,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60361565,42.28973967
+560,21,CAGL,Carya glabra,Pignut Hickory,Partial,-85.60365434,42.28970269
+561,20,QURU,Quercus rubra,Northern Red Oak,Partial,-85.60367563,42.28969872
+562,13,ULAM,Ulmus americana,American Elm,Partial,-85.60368431,42.28972802
+563,11,CASP,Catalpa speciosa,Northern Catalpa,Partial,-85.60366488,42.28972366
+564,12,ULAM,Ulmus americana,American Elm,Partial,-85.60367084,42.289739
+565,14,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.6036769,42.28975569
+566,19,QUAL,Quercus alba,White Oak,Partial,-85.60373065,42.28969957
+567,16,ACPL,Acer platanoides,Norway Maple,Partial,-85.60379135,42.28971518
+568,17,ACPL,Acer platanoides,Norway Maple,Partial,-85.60381319,42.28970845
+569,322,ACPL,Acer platanoides,Norway Maple,Partial,-85.60388029,42.28975512
+570,324,ACPL,Acer platanoides,Norway Maple,Partial,-85.6038305,42.28971252
+571,323,ACPL,Acer platanoides,Norway Maple,Partial,-85.60385414,42.28970163
+572,325,ACPL,Acer platanoides,Norway Maple,Partial,-85.6038547,42.28967565
+573,18,ACPL,Acer platanoides,Norway Maple,Partial,-85.60380475,42.28967516
+574,40,ACPL,Acer platanoides,Norway Maple,Partial,-85.60381179,42.28961303
+575,41,ACPL,Acer platanoides,Norway Maple,Partial,-85.60384015,42.28963735
+576,,,,,,-85.60384964,42.28959446
+577,68,ACPL,Acer platanoides,Norway Maple,Partial,-85.60378669,42.28954734
+578,67,JUNI,Juglans nigra,Black Walnut,Partial,-85.60377898,42.28951013
+579,66,ACPL,Acer platanoides,Norway Maple,Shade,-85.60380831,42.28953819
+580,69,,,,,-85.60382443,42.2895171
+581,65,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60379786,42.28948401
+582,64,TIAM,Tilia americana,American Basswood,Shade,-85.60378393,42.28949272
+583,70,ACPL,Acer platanoides,Norway Maple,Partial,-85.60381432,42.28948477
+584,,,,,,-85.60380489,42.2894317
+585,327,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60391626,42.28946246
+586,328,ACPL,Acer platanoides,Norway Maple,Partial,-85.60391448,42.28943728
+587,72,ACPL,Acer platanoides,Norway Maple,Partial,-85.60382585,42.28941701
+588,97,ULAM,Ulmus americana,American Elm,Partial,-85.60377571,42.28937318
+589,63,ACPL,Acer platanoides,Norway Maple,Shade,-85.60376319,42.28948882
+590,62,ACPL,Acer platanoides,Norway Maple,Partial,-85.60372657,42.28945793
+591,61,ACPL,Acer platanoides,Norway Maple,Partial,-85.60368349,42.28947371
+592,60,ULAM,Ulmus americana,American Elm,Partial,-85.60367636,42.28948768
+593,59,TIAM,Tilia americana,American Basswood,Shade,-85.60363092,42.28951717
+594,48,ACPL,Acer platanoides,Norway Maple,Partial,-85.6035514,42.28956867
+595,49,ACPL,Acer platanoides,Norway Maple,Partial,-85.60355374,42.28955836
+596,47,PRSE1,Prunus serotina,Black Cherry,Partial,-85.60355956,42.28956497
+597,35,ACPL,Acer platanoides,Norway Maple,Shade,-85.6035745,42.28962498
+598,27,JUNI,Juglans nigra,Black Walnut,Partial,-85.603578,42.28964122
+599,25,ACPL,Acer platanoides,Norway Maple,Partial,-85.60361034,42.28963001
+600,24,ACPL,Acer platanoides,Norway Maple,Shade,-85.6036295,42.28965206
+601,23,ACNE,Acer negundo,Boxelder,Shade,-85.60364131,42.28965846
+602,22,ACPL,Acer platanoides,Norway Maple,Shade,-85.60367514,42.28967791
+603,26,ACPL,Acer platanoides,Norway Maple,Shade,-85.6036065,42.28968884
+604,56,ACPL,Acer platanoides,Norway Maple,Shade,-85.60355231,42.28952486
+605,57,ACPL,Acer platanoides,Norway Maple,Partial,-85.60353834,42.2895004
+606,78,ULAM,Ulmus americana,American Elm,Partial,-85.6035577,42.289469
+607,79,ACPL,Acer platanoides,Norway Maple,Shade,-85.60357225,42.28947025
+608,77,CEOC,Celtis occidentalis,Northern Hackberry,Shade,-85.60359871,42.28947231
+609,76,ACNE,Acer negundo,Boxelder,Partial,-85.60364069,42.28946421
+610,75,COFL,Cornus florida,Florida Dogwood,Partial,-85.60368055,42.28943536
+611,96,ACPL,Acer platanoides,Norway Maple,Partial,-85.6037224,42.28936681
+612,95,ACPL,Acer platanoides,Norway Maple,Shade,-85.60373377,42.28936047
+613,99,ACPL,Acer platanoides,Norway Maple,Shade,-85.60377098,42.28935155
+614,98,ULAM,Ulmus americana,American Elm,Partial,-85.60383734,42.28936511
+615,329,ACPL,Acer platanoides,Norway Maple,Partial,-85.60384002,42.28930876
+616,101,ULAM,Ulmus americana,American Elm,Partial,-85.60380859,42.28925333
+617,102,ACPL,Acer platanoides,Norway Maple,Partial,-85.60378248,42.28928436
+618,100,ACPL,Acer platanoides,Norway Maple,Shade,-85.6037322,42.28931054
+619,103,ACPL,Acer platanoides,Norway Maple,Partial,-85.60376169,42.28928796
+620,110,ACPL,Acer platanoides,Norway Maple,Partial,-85.60366401,42.28930961
+621,109,ACPL,Acer platanoides,Norway Maple,Partial,-85.60367275,42.28928704
+622,108,ACPL,Acer platanoides,Norway Maple,Partial,-85.60369544,42.28929056
+623,107,ACPL,Acer platanoides,Norway Maple,Partial,-85.60373403,42.28924347
+624,105,ACPL,Acer platanoides,Norway Maple,Partial,-85.60370125,42.28923127
+625,104,ACPL,Acer platanoides,Norway Maple,Partial,-85.60374098,42.28924347
+626,332,ACPL,Acer platanoides,Norway Maple,Partial,-85.60385687,42.28921436
+627,295,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60392719,42.28917596
+628,331,MOAL,Morus alba,White Mulberry,Partial,-85.60383412,42.2891934
+629,330,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60382559,42.2891866
+630,125,ULPA,Ulmus pumila,Siberian Elm,Partial,-85.60374945,42.28915258
+631,,,,,,-85.60377068,42.28912274
+632,,,,,,-85.60376934,42.28912376
+633,334,PIST,Pinus strobus,Eastern White Pine,Partial,-85.60377918,42.28912538
+634,127,ACPL,Acer platanoides,Norway Maple,Partial,-85.60367612,42.28917131
+635,126,TIAM,Tilia americana,American Basswood,Partial,-85.60370126,42.28912708
+636,137,QUAL,Quercus alba,White Oak,Partial,-85.60358838,42.2890884
+637,136,ULAM,Ulmus americana,American Elm,Partial,-85.60355675,42.28910843
+638,138,ACPL,Acer platanoides,Norway Maple,Partial,-85.60350144,42.28911229
+639,139,JUNI,Juglans nigra,Black Walnut,Partial,-85.60354829,42.28908556
+640,140,ACPL,Acer platanoides,Norway Maple,Partial,-85.60355911,42.28907073
+641,141,ACPL,Acer platanoides,Norway Maple,Partial,-85.60349952,42.28906629
+642,142,PRSE4,Prunus serotina,Black Cherry,Partial,-85.60348083,42.2890823
+643,143,ULAM,Ulmus americana,American Elm,Partial,-85.603454,42.28908073
+644,144,ACPL,Acer platanoides,Norway Maple,Partial,-85.60345312,42.28911184
+645,154,TIAM,Tilia americana,American Basswood,Partial,-85.60329849,42.28916951
+646,153,ACPL,Acer platanoides,Norway Maple,Partial,-85.60331878,42.2891907
+647,155,ULAM,Ulmus americana,American Elm,Partial,-85.60323694,42.28913799
+648,156,ACPL,Acer platanoides,Norway Maple,Partial,-85.60322753,42.28909529
+649,159,ACPL,Acer platanoides,Norway Maple,Partial,-85.60319053,42.28904574
+650,160,ACPL,Acer platanoides,Norway Maple,Partial,-85.6031987,42.28907447
+651,161,ACPL,Acer platanoides,Norway Maple,Partial,-85.60317786,42.28911183
+652,166,ACPL,Acer platanoides,Norway Maple,Partial,-85.60316038,42.28908687
+653,165,ACPL,Acer platanoides,Norway Maple,Partial,-85.60319996,42.2890585
+654,164,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60314406,42.28905158
+655,162,TIAM,Tilia americana,American Basswood,Partial,-85.60318491,42.28905016
+656,163,TIAM,Tilia americana,American Basswood,Partial,-85.60313145,42.28905694
+657,168,ACPL,Acer platanoides,Norway Maple,Partial,-85.60313879,42.28913254
+658,171,ULPA,Ulmus pumila,Siberian Elm,Shade,-85.60317482,42.2891845
+659,170,TIAM,Tilia americana,American Basswood,Partial,-85.60317964,42.28918645
+660,169,JUNI,Juglans nigra,Black Walnut,Partial,-85.6031454,42.28915293
+661,175,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.6031179,42.28919984
+662,1335,BENI,Betula nigra,River birch,Partial,-85.59660848,42.29138625
+663,205,TIAM,Tilia americana,American Basswood,Partial,-85.60297275,42.28920614
+664,202,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.60292167,42.28929908
+665,238,ACPL,Acer platanoides,Norway Maple,Partial,-85.60292929,42.28930547
+666,201,ACPL,Acer platanoides,Norway Maple,Partial,-85.60294024,42.28929887
+667,237,CEOC,Celtis occidentalis,Northern Hackberry,Partial,-85.60288493,42.28928382
+668,23,ACNE,Acer negundo,Boxelder,Shade,-85.60285538,42.28929305
+669,239,ACPL,Acer platanoides,Norway Maple,Partial,-85.6030202,42.28931315
+670,240,MOAL,Morus alba,White Mulberry,Partial,-85.60305455,42.28933186
+671,241,ULAM,Ulmus americana,American Elm,Partial,-85.60315057,42.2893424
+672,242,ULAM,Ulmus americana,American Elm,Partial,-85.60316761,42.28932895
+673,243,ULAM,Ulmus americana,American Elm,Partial,-85.60319634,42.28932918
+674,81,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60340927,42.28943887
+675,82,ACNE,Acer negundo,Boxelder,Partial,-85.6034156,42.28942645
+676,83,ACNE,Acer negundo,Boxelder,Partial,-85.60344713,42.28942839
+677,84,ACNE,Acer negundo,Boxelder,Partial,-85.60344423,42.28944025
+678,85,ROPS,Robinia pseudoacacia,Black Locust,Partial,-85.60347351,42.28941205
+679,86,ACPL,Acer platanoides,Norway Maple,Shade,-85.60350145,42.28941237
+680,88,ACPL,Acer platanoides,Norway Maple,Shade,-85.60351034,42.28937442
+681,87,ACPL,Acer platanoides,Norway Maple,Partial,-85.60344462,42.28935715
+682,91,QUAL,Quercus alba,White Oak,Partial,-85.6036307,42.28937365
+683,92,ACNE,Acer negundo,Boxelder,Partial,-85.60360942,42.28939469
+684,58,CAGL,Carya glabra,Pignut Hickory,Partial,-85.60359232,42.28947014
+685,44,JUNI,Juglans nigra,Black Walnut,Partial,-85.60368847,42.2895618
+686,15,CAGL,Carya glabra,Pignut Hickory,Partial,-85.60377908,42.28970464
+687,39,ULAM,Ulmus americana,American Elm,Partial,-85.60380997,42.2896303
+688,43,TIAM,Tilia americana,American Basswood,Shade,-85.60378809,42.2895617
+689,37,ACPL,Acer platanoides,Norway Maple,Shade,-85.60374566,42.28961913
+690,36,ACPL,Acer platanoides,Norway Maple,Shade,-85.6037189,42.2896119
+691,38,ULAM,Ulmus americana,American Elm,Partial,-85.60373094,42.28959797
+692,46,ACNE,Acer negundo,Boxelder,Partial,-85.60364143,42.28957876
+693,45,TIAM,Tilia americana,American Basswood,Partial,-85.60365807,42.28957139
+694,177,ACPL,Acer platanoides,Norway Maple,Partial,-85.60301353,42.28921416
+695,198,ACPL,Acer platanoides,Norway Maple,Partial,-85.6030861,42.28923843
+696,197,MOAL,Morus alba,White Mulberry,Partial,-85.60313218,42.28923393
+697,,,,,,-85.60317766,42.28922468
+698,172,ACPL,Acer platanoides,Norway Maple,Partial,-85.60322618,42.28921669
+699,191,JUNI,Juglans nigra,Black Walnut,Partial,-85.60332834,42.28923614
+700,115,ACPL,Acer platanoides,Norway Maple,Partial,-85.60349718,42.28929467
+701,116,ACPL,Acer platanoides,Norway Maple,Partial,-85.60355269,42.28926503
+702,117,ACPL,Acer platanoides,Norway Maple,Partial,-85.60363594,42.28934197
+703,118,ACPL,Acer platanoides,Norway Maple,Shade,-85.60360038,42.28927368
+704,119,ACPL,Acer platanoides,Norway Maple,Partial,-85.60359384,42.28924402
+705,120,PRSE2,Prunus serotina,Black Cherry,Partial,-85.60358752,42.28924754
+706,122,ACPL,Acer platanoides,Norway Maple,Partial,-85.60359535,42.28923599
+707,123,ACPL,Acer platanoides,Norway Maple,Partial,-85.60367621,42.28920054
+708,124,ACPL,Acer platanoides,Norway Maple,Partial,-85.60368502,42.2891938
+709,124,ACPL,Acer platanoides,Norway Maple,Partial,-85.60373524,42.28930429
+710,128,ACPL,Acer platanoides,Norway Maple,Partial,-85.60366492,42.289154
+711,129,ULAM,Ulmus americana,American Elm,Partial,-85.60361178,42.28915942
+712,133,QUAL,Quercus alba,White Oak,Partial,-85.60358087,42.2891964
+713,130,ACPL,Acer platanoides,Norway Maple,Partial,-85.60357269,42.28917823
+714,131,ACPL,Acer platanoides,Norway Maple,Partial,-85.60356364,42.28917049
+715,132,ACPL,Acer platanoides,Norway Maple,Partial,-85.60356586,42.2891866
+716,152,ACPL,Acer platanoides,Norway Maple,Partial,-85.6035192,42.28915028
+717,320,BENI,Betula nigra,River birch,Partial,-85.60344521,42.29006216
+718,319,BENI,Betula nigra,River birch,Partial,-85.60345055,42.29011444
+719,318,BENI,Betula nigra,River birch,Partial,-85.60339892,42.29016623
+720,509,PRSE10,Prunus serotina,Black Cherry,Partial,-85.60332405,42.28983149
+721,508,QURU,Quercus rubra,Red Oak,Partial,-85.6033358,42.28982432
+722,507,QURU,Quercus rubra,Red Oak,Partial,-85.6033603,42.28982702
+723,506,QURU,Quercus rubra,Red Oak,Partial,-85.60335721,42.28978516
+724,505,QURU,Quercus rubra,Red Oak,Partial,-85.60332465,42.2897717
+725,504,QURU,Quercus rubra,Red Oak,Partial,-85.60332173,42.2897472
+726,503,QUAL,Quercus alba,White Oak,Partial,-85.60329013,42.28971662
+727,502,QUAL,Quercus alba,White Oak,Partial,-85.60328537,42.28959
+728,501,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.60328893,42.28957618
+729,513,QURU,Quercus rubra,Red Oak,Partial,-85.60325078,42.28990287
+730,512,QURU,Quercus rubra,Red Oak,Partial,-85.60330653,42.28990349
+731,510,QURU,Quercus rubra,Red Oak,Partial,-85.60334628,42.28987906
+732,511,QUAL,Quercus alba,White Oak,Partial,-85.60333931,42.28987105
+733,514,QURU,Quercus rubra,Red Oak,Partial,-85.60329255,42.28992336
+734,515,QURU,Quercus rubra,Red Oak,Partial,-85.60332057,42.2899365
+735,516,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60332924,42.28999048
+736,517,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60325644,42.28998657
+737,518,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60322244,42.28999661
+738,579,QUAL,Quercus alba,White Oak,Partial,-85.60311738,42.28998043
+739,578,QUAL,Quercus alba,White Oak,Partial,-85.60304451,42.28997585
+740,575,QUAL,Quercus alba,White Oak,Partial,-85.60299136,42.28997308
+741,573,QUAL,Quercus alba,White Oak,Partial,-85.60289604,42.28993507
+742,580,PRSE12,Prunus serotina,Black Cherry,Partial,-85.60315278,42.29001349
+743,519,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60323051,42.29000348
+744,520,PRSE11,Prunus serotina,Black Cherry,Partial,-85.60327379,42.29000287
+745,521,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60332172,42.29002677
+746,522,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60328129,42.29003206
+747,523,QUAL,Quercus alba,White Oak,Partial,-85.60329075,42.29008344
+748,525,FAGR,Fagus grandifolia,American Beech,Partial,-85.60323258,42.29008716
+749,577,QUAL,Quercus alba,White Oak,Partial,-85.60312567,42.29004667
+750,576,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60307486,42.29006471
+751,574,QUAL,Quercus alba,White Oak,Partial,-85.6030225,42.29005016
+752,572,QUAL,Quercus alba,White Oak,Partial,-85.60289476,42.2900019
+753,571,QUAL,Quercus alba,White Oak,Partial,-85.60275254,42.29000823
+754,570,QUAL,Quercus alba,White Oak,Partial,-85.60278675,42.29003782
+755,589,QURU,Quercus rubra,Red Oak,Partial,-85.60274268,42.2900589
+756,568,QUAL,Quercus alba,White Oak,Partial,-85.60274752,42.29008139
+757,567,PSME,Pseudotsuga menziesii,Douglas-fir,Partial,-85.60276885,42.29017204
+758,566,QUAL,Quercus alba,White Oak,Partial,-85.60270367,42.29015741
+759,560,QUAL,Quercus alba,White Oak,Partial,-85.60274713,42.29029312
+760,559,QUAL,Quercus alba,White Oak,Partial,-85.60285858,42.29022959
+761,558,JUNI,Juglans nigra,Black Walnut,Partial,-85.60286892,42.29020763
+762,557,ACPL,Acer platanoides,Norway Maple,Partial,-85.60287716,42.29021875
+763,564,TIAM,Tilia americana,American Basswood,Partial,-85.60295783,42.29012846
+764,561,QURU,Quercus rubra,Red Oak,Partial,-85.60294268,42.29014009
+765,562,QUAL,Quercus alba,White Oak,Partial,-85.60292125,42.29016005
+766,554,QURU,Quercus rubra,Red Oak,Partial,-85.60290739,42.29017398
+767,555,ACPL,Acer platanoides,Norway Maple,Partial,-85.60292907,42.29021681
+768,556,QUAL,Quercus alba,White Oak,Partial,-85.60292995,42.29025631
+769,551,TIAM,Tilia americana,American Basswood,Partial,-85.60296927,42.29028533
+770,548,CAOV,Carya ovata,Shagbark Hickory,Partial,-85.60299757,42.29027094
+771,553,TIAM,Tilia americana,American Basswood,Partial,-85.60297513,42.29019828
+772,552,QURU,Quercus rubra,Red Oak,Partial,-85.60300644,42.29023879
+773,547,TIAM,Tilia americana,American Basswood,Partial,-85.60304571,42.29027717
+774,1184,MA48,Malus spp.,Crab Apple,Full,-85.59903454,42.29049623
+775,1183,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59892814,42.29084995
+776,1238,MALI,Magnolia liliiflora,Lily Magnolia,Partial,-85.59911661,42.29108996
+777,1239,MALI,Magnolia liliiflora,Lily Magnolia,Partial,-85.59908778,42.29104654
+778,1182,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59889417,42.29107441
+779,1184,MA48,Malus spp.,Crab Apple,Full,-85.59887811,42.29116768
+780,1180,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59884812,42.29136924
+781,1179,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59882605,42.29148993
+782,1178,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59878758,42.29169067
+783,1177,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.5987671,42.29182182
+784,1256,MA53,Malus spp.,Crab Apple,Partial,-85.59850105,42.29198733
+785,1251,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59863125,42.29174892
+786,1250,PLOC,Platanus occidentalis,American Sycamore,Full,-85.59867018,42.29150799
+787,1249,PLOC,Platanus occidentalis,American Sycamore,Partial,-85.59871979,42.29126195
+788,1248,PIAB,Picea abies,Norway Spruce,Partial,-85.59864904,42.29116817
+789,1242,ACPL,Acer platanoides,Norway Maple,Partial,-85.59866491,42.29106833
+790,,,,,,-85.59852915,42.29098099
+791,,,,,,-85.59864886,42.29097911
+792,,,,,,-85.59867655,42.29097237
+793,,,,,,-85.5987016,42.29093607
+794,,,,,,-85.59869782,42.29092374
+795,,,,,,-85.59869965,42.29089682
+796,,,,,,-85.59870744,42.29088428
+797,,,,,,-85.59871603,42.29087246
+798,1289,ACPL,Acer platanoides,Norway Maple,Full,-85.59880221,42.29071381
+799,1290,ACPL,Acer platanoides,Norway Maple,Full,-85.59881255,42.29064977
+800,,,,,,-85.59858967,42.29052629
+801,1292,TICO,Tilia cordata,Little Leaf Linden,Partial,-85.59865387,42.29045538

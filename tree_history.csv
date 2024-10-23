@@ -1,4 +1,4 @@
-Hist_ID,Tree_ID,Tag_Number,Hazard_Rat,DBH,Notes,Year
+hist_id,tree_id,tag_number,hazard_rating,DBH,notes,year
 0,0,1070,Healthy,46,,2022
 1,1,1071,Healthy,35.3,,2022
 2,2,1072,Healthy,34.6,,2022

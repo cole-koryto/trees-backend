@@ -1,8 +1,8 @@
 import pandas as pd
 from config import *
 import psycopg2
-from schemas.table_schemas import TreeInfo, TreeHistory
-from sqlmodel import Field, SQLModel, create_engine
+from schemas.table_schemas import TreeInfo, TreeHistory, Users
+from sqlmodel import SQLModel, create_engine, Session
 
 
 def main():
@@ -15,12 +15,16 @@ def main():
     tree_info = pd.read_csv("tree_info.csv")
 
     # Tries to connect to postgres database on default port if possible
+    # TODO add password hashing
     try:
         engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:5432/{LOCAL_DB_NAME}", echo=True)
         SQLModel.metadata.drop_all(engine)
         SQLModel.metadata.create_all(engine)
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
         tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
+        with Session(engine) as session:
+            session.add(Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=ADMIN_PASSWORD))
+            session.commit()
 
     except Exception as e:
         engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:5433/{LOCAL_DB_NAME}", echo=True)
@@ -28,6 +32,9 @@ def main():
         SQLModel.metadata.create_all(engine)
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
         tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
+        with Session(engine) as session:
+            session.add(Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=ADMIN_PASSWORD))
+            session.commit()
 
 
 if __name__ == "__main__":
