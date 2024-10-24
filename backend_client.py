@@ -4,12 +4,10 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
 from passlib.hash import pbkdf2_sha256
-from sqlalchemy import ScalarResult
 from sqlmodel import Session, create_engine, select
 from typing import Annotated
 
 from config import *
-from schemas.input_schemas import TreeInputPayload
 from schemas.table_schemas import TreeInfo, TreeHistory, Users
 from schemas.token_schemas import Token, TokenData
 
@@ -30,26 +28,61 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
-async def get_tree_info(session: SessionDep,):
+async def get_tree_info(session: SessionDep):
     info = session.exec(select(TreeInfo))
     return info
 
+
 # Endpoint that returns the treehistory table
 @app.get("/treehistory")
-async def get_tree_history(session: SessionDep,):
+async def get_tree_history(session: SessionDep):
     history = session.exec(select(TreeHistory))
     return history
 
 
+# Endpoint that updates treeinfo table and returns updated instance
+@app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
+async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except InvalidTokenError:
+        raise credentials_exception
+
+    # Gets tree of interest to update
+    target_tree = session.get(TreeInfo, tree_id)
+    if not target_tree:
+        raise HTTPException(status_code=404, detail="Tree not found")
+
+    # Cleans new data and updates existing instance
+    new_treeinfo = new_treeinfo.model_dump(exclude_unset=True)
+    target_tree.sqlmodel_update(new_treeinfo)
+
+    # Adds updated instance to table
+    session.add(target_tree)
+    session.commit()
+    session.refresh(target_tree)
+    return target_tree
+
+
 # Gets a specified user based off of the given username
-def get_user(username: str, session: SessionDep,):
+def get_user(username: str, session: SessionDep):
     statement = select(Users).where(Users.username == username)
     user_info = session.exec(statement).first()
     return user_info
 
 
 # Authenticates the given user returning their info if possible or false otherwise
-def authenticate_user(username: str, password: str, session: SessionDep,):
+def authenticate_user(username: str, password: str, session: SessionDep):
     user = get_user(username, session)
     if not user:
         return False
@@ -69,9 +102,10 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
+
 # Login endpoint that returns a token given an authenticated user
 @app.post("/token", )
-async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep,) -> Token:
+async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
     user = authenticate_user(form_data.username, form_data.password, session)
     if not user:
         raise HTTPException(
@@ -84,23 +118,3 @@ async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm,
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     return Token(access_token=access_token, token_type="bearer")
-
-# TODO REMOVE
-# Temp function to test authentication
-@app.get("/test")
-async def test_auth(token: Annotated[str, Depends(oauth2_scheme)]):
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-        token_data = TokenData(username=username)
-    except InvalidTokenError:
-        raise credentials_exception
-
-    return "Works" + token_data.__str__()
