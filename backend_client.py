@@ -73,6 +73,21 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
     session.refresh(target_tree)
     return target_tree
 
+# Login endpoint that returns a token given an authenticated user
+@app.post("/token", )
+async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
+    user = authenticate_user(form_data.username, form_data.password, session)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    access_token_expires = timedelta(hours=ACCESS_TOKEN_EXPIRE_HOURS)
+    access_token = create_access_token(
+        data={"sub": user.username}, expires_delta=access_token_expires
+    )
+    return Token(access_token=access_token, token_type="bearer")
 
 # Gets a specified user based off of the given username
 def get_user(username: str, session: SessionDep):
@@ -101,20 +116,3 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
-
-
-# Login endpoint that returns a token given an authenticated user
-@app.post("/token", )
-async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
-    user = authenticate_user(form_data.username, form_data.password, session)
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Incorrect username or password",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-    access_token_expires = timedelta(hours=ACCESS_TOKEN_EXPIRE_HOURS)
-    access_token = create_access_token(
-        data={"sub": user.username}, expires_delta=access_token_expires
-    )
-    return Token(access_token=access_token, token_type="bearer")
