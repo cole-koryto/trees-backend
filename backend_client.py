@@ -4,6 +4,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
 from passlib.hash import pbkdf2_sha256
+from sqlalchemy import ScalarResult
 from sqlmodel import Session, create_engine, select
 from typing import Annotated
 
@@ -29,13 +30,13 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
-async def get_tree_info(session: SessionDep,) -> list[TreeInfo]:
+async def get_tree_info(session: SessionDep,):
     info = session.exec(select(TreeInfo))
     return info
 
 # Endpoint that returns the treehistory table
 @app.get("/treehistory")
-async def get_tree_history(session: SessionDep,) -> list[TreeHistory]:
+async def get_tree_history(session: SessionDep,):
     history = session.exec(select(TreeHistory))
     return history
 
