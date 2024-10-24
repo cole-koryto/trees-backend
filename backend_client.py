@@ -40,6 +40,103 @@ async def get_tree_history(session: SessionDep):
     return history
 
 
+# Adds new instance to treeinfo table
+@app.post("/treeinfo/new", response_model=TreeInfo)
+def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+
+    session.add(new_treeinfo)
+    session.commit()
+    session.refresh(new_treeinfo)
+    return new_treeinfo
+
+# Adds new instance to treehistory table
+@app.post("/treehistory/new", response_model=TreeHistory)
+def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+
+    session.add(new_treehistory)
+    session.commit()
+    session.refresh(new_treehistory)
+    return new_treehistory
+
+
+# Removes an instance from the treeinfo table by tree_id
+@app.delete("/treeinfo/delete/{tree_id}", status_code=204)
+def delete_treeinfo(tree_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+
+    target_tree = session.get(TreeInfo, tree_id)
+    if not target_tree:
+        raise HTTPException(status_code=404, detail="Tree does not exist.")
+    target_history = session.exec(select(TreeHistory).where(TreeHistory.Tree_ID == tree_id))
+    for hist_id in target_history:
+        session.delete(hist_id)
+    session.delete(target_tree)
+    session.commit()
+
+
+# Removes an instance from the treehistory table by hist_id
+@app.delete("/treehistory/delete/{hist_id}", status_code=204)
+def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+
+
+    history = session.get(TreeHistory, hist_id)
+    if not history:
+        raise HTTPException(status_code=404, detail="The history you are looking for does not exist.")
+    session.delete(history)
+    session.commit()
+
+
 # Endpoint that updates treeinfo table and returns updated instance
 @app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
 async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
@@ -54,7 +151,6 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
         username: str = payload.get("sub")
         if username is None:
             raise credentials_exception
-        token_data = TokenData(username=username)
     except InvalidTokenError:
         raise credentials_exception
 
@@ -72,6 +168,40 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
     session.commit()
     session.refresh(target_tree)
     return target_tree
+
+
+# Endpoint that updates treehistory table and returns updated instance
+@app.patch("/treehistory/update/{hist_id}", response_model=TreeHistory)
+async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Authenticates that user has permission to modify table
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+
+    # Gets tree of interest to update
+    target_history = session.get(TreeHistory, hist_id)
+    if not target_history:
+        raise HTTPException(status_code=404, detail="History not found")
+
+    # Cleans new data and updates existing instance
+    new_history = new_treehistory.model_dump(exclude_unset=True)
+    target_history.sqlmodel_update(new_history)
+
+    # Adds updated instance to table
+    session.add(target_history)
+    session.commit()
+    session.refresh(target_history)
+    return target_history
+
 
 # Login endpoint that returns a token given an authenticated user
 @app.post("/token", )
