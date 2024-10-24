@@ -21,7 +21,7 @@ class TreeHistory(SQLModel, table=True):
 
 class Users(SQLModel, table=True):
     user_id: int | None = Field(default=None, index=True, primary_key=True)
-    username: str
+    username: str = Field(default=None, index=True, unique=True)
     email: str | None = None
     full_name: str
     hashed_password: str
