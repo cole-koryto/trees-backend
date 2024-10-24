@@ -138,6 +138,7 @@ def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, 
 
 
 # Endpoint that updates treeinfo table and returns updated instance
+# TODO ensure that tree_id and tag_number relationship cannot be broken
 @app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
 async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Authenticates that user has permission to modify table
@@ -171,6 +172,7 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
 
 
 # Endpoint that updates treehistory table and returns updated instance
+# TODO ensure that tree_id and tag_number relationship cannot be broken
 @app.patch("/treehistory/update/{hist_id}", response_model=TreeHistory)
 async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Authenticates that user has permission to modify table
@@ -204,7 +206,7 @@ async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session
 
 
 # Login endpoint that returns a token given an authenticated user
-@app.post("/token", )
+@app.post("/token")
 async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
     user = authenticate_user(form_data.username, form_data.password, session)
     if not user:
