@@ -16,6 +16,7 @@ def main():
     tree_info = pd.read_csv("tree_info.csv")
 
     # Tries to connect to postgres database on default port if possible
+    default_user = Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=pbkdf2_sha256.hash(ADMIN_PASSWORD), data_permissions=True, user_permissions=True)
     try:
         engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:5432/{LOCAL_DB_NAME}", echo=True)
         SQLModel.metadata.drop_all(engine)
@@ -23,7 +24,7 @@ def main():
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
         tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
         with Session(engine) as session:
-            session.add(Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=pbkdf2_sha256.hash(ADMIN_PASSWORD)))
+            session.add(default_user)
             session.commit()
 
     except Exception as e:
@@ -33,7 +34,7 @@ def main():
         tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
         tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
         with Session(engine) as session:
-            session.add(Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=pbkdf2_sha256.hash(ADMIN_PASSWORD)))
+            session.add(default_user)
             session.commit()
 
 

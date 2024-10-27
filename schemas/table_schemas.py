@@ -24,3 +24,5 @@ class Users(SQLModel, table=True):
     email: str | None = None
     full_name: str
     hashed_password: str
+    data_permissions: bool
+    user_permissions: bool
