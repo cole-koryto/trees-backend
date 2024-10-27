@@ -13,7 +13,6 @@ class TreeInfo(SQLModel, table=True):
 class TreeHistory(SQLModel, table=True):
     hist_id: int | None = Field(default=None, index=True, primary_key=True)
     tree_id: int = Field(index=True, foreign_key="treeinfo.tree_id")
-    tag_number: int | None = Field(default=None, index=True)
     hazard_rating: str | None
     DBH: float | None
     notes: str | None
