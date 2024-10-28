@@ -167,6 +167,21 @@ def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depe
     return new_user
 
 
+# Deletes user from the site
+@app.delete("/users/delete", response_model=Users)
+def delete_user(user_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
+
+    user = session.get(Users, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="The user you are looking for does not exist.")
+    session.delete(user)
+    session.commit()
+
+
 # Authenticates that token is real and for valid user, and returns username if true
 def authenticate_token(token: Annotated[str, Depends(oauth2_scheme)]):
     try:
