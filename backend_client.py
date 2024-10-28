@@ -14,6 +14,10 @@ from schemas.token_schemas import Token, TokenData
 
 # authentication configuration
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"})
 
 # configure FastAPI
 app = FastAPI()
@@ -43,41 +47,24 @@ async def get_tree_history(session: SessionDep):
 # Adds new instance to treeinfo table
 @app.post("/treeinfo/new", response_model=TreeInfo)
 def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     session.add(new_treeinfo)
     session.commit()
     session.refresh(new_treeinfo)
     return new_treeinfo
 
+
 # Adds new instance to treehistory table
 @app.post("/treehistory/new", response_model=TreeHistory)
 def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     session.add(new_treehistory)
     session.commit()
@@ -88,19 +75,10 @@ def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token:
 # Removes an instance from the treeinfo table by tree_id
 @app.delete("/treeinfo/delete/{tree_id}", status_code=204)
 def delete_treeinfo(tree_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     target_tree = session.get(TreeInfo, tree_id)
     if not target_tree:
@@ -115,20 +93,10 @@ def delete_treeinfo(tree_id: int, session: SessionDep, token: Annotated[str, Dep
 # Removes an instance from the treehistory table by hist_id
 @app.delete("/treehistory/delete/{hist_id}", status_code=204)
 def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
-
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     history = session.get(TreeHistory, hist_id)
     if not history:
@@ -140,19 +108,10 @@ def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, 
 # Endpoint that updates treeinfo table and returns updated instance
 @app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
 async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     # Gets tree of interest to update
     target_tree = session.get(TreeInfo, tree_id)
@@ -173,19 +132,10 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
 # Endpoint that updates treehistory table and returns updated instance
 @app.patch("/treehistory/update/{hist_id}", response_model=TreeHistory)
 async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Authenticates that user has permission to modify table
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-    except InvalidTokenError:
-        raise credentials_exception
+    # Gets user if possible and checks if user has data modification permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).data_permissions:
+        raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     # Gets tree of interest to update
     target_history = session.get(TreeHistory, hist_id)
@@ -201,6 +151,18 @@ async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session
     session.commit()
     session.refresh(target_history)
     return target_history
+
+
+# Authenticates that token is real and for valid user, and returns username if true
+def authenticate_token(token: Annotated[str, Depends(oauth2_scheme)]):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+    return username
 
 
 # Login endpoint that returns a token given an authenticated user
