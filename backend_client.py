@@ -153,6 +153,20 @@ async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session
     return target_history
 
 
+# Adds new user to the site
+@app.post("/users/new", response_model=Users)
+def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Gets user if possible and checks if user has user permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).user_permissions:
+        raise HTTPException(status_code=403, detail="User does not have user permissions")
+
+    session.add(new_user)
+    session.commit()
+    session.refresh(new_user)
+    return new_user
+
+
 # Authenticates that token is real and for valid user, and returns username if true
 def authenticate_token(token: Annotated[str, Depends(oauth2_scheme)]):
     try:
