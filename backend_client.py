@@ -143,8 +143,8 @@ async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session
         raise HTTPException(status_code=404, detail="History not found")
 
     # Cleans new data and updates existing instance
-    new_history = new_treehistory.model_dump(exclude_unset=True)
-    target_history.sqlmodel_update(new_history)
+    new_treehistory = new_treehistory.model_dump(exclude_unset=True)
+    target_history.sqlmodel_update(new_treehistory)
 
     # Adds updated instance to table
     session.add(target_history)
@@ -170,16 +170,40 @@ def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depe
 # Deletes user from the site
 @app.delete("/users/delete/{user_id}", status_code=204)
 def delete_user(user_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
-    # Gets user if possible and checks if user has data modification permissions
+    # Gets user if possible and checks if user has user permissions
     username = authenticate_token(token)
     if not get_user(username, session).user_permissions:
-        raise HTTPException(status_code=403, detail="User does not have data permissions")
+        raise HTTPException(status_code=403, detail="User does not have user permissions")
 
     user = session.get(Users, user_id)
     if not user:
         raise HTTPException(status_code=404, detail="The user you are looking for does not exist.")
     session.delete(user)
     session.commit()
+
+
+# Endpoint that updates users table and returns updated user instance
+@app.patch("/users/update/{user_id}", response_model=Users)
+async def update_user(user_id: int, new_user: Users, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Gets user if possible and checks if user has user permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).user_permissions:
+        raise HTTPException(status_code=403, detail="User does not have user permissions")
+
+    # Gets tree of interest to update
+    target_user = session.get(Users, user_id)
+    if not target_user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    # Cleans new data and updates existing instance
+    new_user = new_user.model_dump(exclude_unset=True)
+    target_user.sqlmodel_update(new_user)
+
+    # Adds updated instance to table
+    session.add(target_user)
+    session.commit()
+    session.refresh(target_user)
+    return target_user
 
 
 # Authenticates that token is real and for valid user, and returns username if true
