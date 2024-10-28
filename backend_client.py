@@ -168,7 +168,7 @@ def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depe
 
 
 # Deletes user from the site
-@app.delete("/users/delete", response_model=Users)
+@app.delete("/users/delete/{user_id}", status_code=204)
 def delete_user(user_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
