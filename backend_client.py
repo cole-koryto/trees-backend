@@ -172,7 +172,7 @@ def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depe
 def delete_user(user_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
-    if not get_user(username, session).data_permissions:
+    if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
     user = session.get(Users, user_id)
