@@ -161,6 +161,8 @@ def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depe
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
+    # TODO add password hashing
+
     session.add(new_user)
     session.commit()
     session.refresh(new_user)
@@ -194,6 +196,8 @@ async def update_user(user_id: int, new_user: Users, session: SessionDep, token:
     target_user = session.get(Users, user_id)
     if not target_user:
         raise HTTPException(status_code=404, detail="User not found")
+
+    # TODO add password hashing
 
     # Cleans new data and updates existing instance
     new_user = new_user.model_dump(exclude_unset=True)
