@@ -8,6 +8,7 @@ from sqlmodel import Session, create_engine, select
 from typing import Annotated
 
 from config import *
+from schemas.input_schemas import NewUserInput, ModifyUserInput
 from schemas.table_schemas import TreeInfo, TreeHistory, Users
 from schemas.token_schemas import Token, TokenData
 
@@ -32,14 +33,14 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
-async def get_tree_info(session: SessionDep):
+def get_tree_info(session: SessionDep):
     info = session.exec(select(TreeInfo))
     return info
 
 
 # Endpoint that returns the treehistory table
 @app.get("/treehistory")
-async def get_tree_history(session: SessionDep):
+def get_tree_history(session: SessionDep):
     history = session.exec(select(TreeHistory))
     return history
 
@@ -107,7 +108,7 @@ def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, 
 
 # Endpoint that updates treeinfo table and returns updated instance
 @app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
-async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
     if not get_user(username, session).data_permissions:
@@ -131,7 +132,7 @@ async def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: Session
 
 # Endpoint that updates treehistory table and returns updated instance
 @app.patch("/treehistory/update/{hist_id}", response_model=TreeHistory)
-async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
     if not get_user(username, session).data_permissions:
@@ -155,53 +156,55 @@ async def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session
 
 # Adds new user to the site
 @app.post("/users/new", response_model=Users)
-def create_user(new_user: Users, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has user permissions
     username = authenticate_token(token)
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    # TODO add password hashing
-
+    # Creates new user instance based on user input and adds to table
+    new_user = Users(username=new_user_input.username, email=new_user_input.email, full_name=new_user_input.full_name, hashed_password=pbkdf2_sha256.hash(new_user_input.password), data_permissions=new_user_input.data_permissions, user_permissions=new_user_input.user_permissions)
     session.add(new_user)
     session.commit()
     session.refresh(new_user)
+
     return new_user
 
 
 # Deletes user from the site
-@app.delete("/users/delete/{user_id}", status_code=204)
-def delete_user(user_id: int, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+@app.delete("/users/delete/{input_username}", status_code=204)
+def delete_user(input_username: str, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has user permissions
-    username = authenticate_token(token)
-    if not get_user(username, session).user_permissions:
+    token_username = authenticate_token(token)
+    if not get_user(token_username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    user = session.get(Users, user_id)
-    if not user:
+    target_user = session.get(Users, input_username)
+    if not target_user:
         raise HTTPException(status_code=404, detail="The user you are looking for does not exist.")
-    session.delete(user)
+    session.delete(target_user)
     session.commit()
 
 
 # Endpoint that updates users table and returns updated user instance
-@app.patch("/users/update/{user_id}", response_model=Users)
-async def update_user(user_id: int, new_user: Users, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+@app.patch("/users/update/{input_username}", response_model=Users)
+def update_user(input_username: str, modify_user_input: ModifyUserInput, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has user permissions
-    username = authenticate_token(token)
-    if not get_user(username, session).user_permissions:
+    token_username = authenticate_token(token)
+    if not get_user(token_username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
     # Gets tree of interest to update
-    target_user = session.get(Users, user_id)
+    target_user = session.get(Users, input_username)
     if not target_user:
         raise HTTPException(status_code=404, detail="User not found")
 
-    # TODO add password hashing
-
     # Cleans new data and updates existing instance
-    new_user = new_user.model_dump(exclude_unset=True)
-    target_user.sqlmodel_update(new_user)
+    modify_user_input = modify_user_input.model_dump(exclude_unset=True)
+    if "password" in modify_user_input:
+        modify_user_input["hashed_password"] = pbkdf2_sha256.hash(modify_user_input["password"])
+        # input_user.pop("password")
+    target_user.sqlmodel_update(modify_user_input)
 
     # Adds updated instance to table
     session.add(target_user)
@@ -224,7 +227,7 @@ def authenticate_token(token: Annotated[str, Depends(oauth2_scheme)]):
 
 # Login endpoint that returns a token given an authenticated user
 @app.post("/token")
-async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
+def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep) -> Token:
     user = authenticate_user(form_data.username, form_data.password, session)
     if not user:
         raise HTTPException(
