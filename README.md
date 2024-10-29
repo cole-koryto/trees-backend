@@ -1,5 +1,5 @@
 # trees-backend
-Developed using Python 3.11
+Developed using Python 3.11.2
 
 # Setup
 1. Ensure you have postgres installed 
