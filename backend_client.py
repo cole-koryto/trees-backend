@@ -6,6 +6,7 @@ from jwt.exceptions import InvalidTokenError
 from passlib.hash import pbkdf2_sha256
 from sqlmodel import Session, create_engine, select
 from typing import Annotated
+from fastapi.middleware.cors import CORSMiddleware
 
 from config import *
 from schemas.input_schemas import NewUserInput, ModifyUserInput
@@ -30,18 +31,29 @@ def get_session():
         yield session
 SessionDep = Annotated[Session, Depends(get_session)]
 
+# configure FastAPI
+app = FastAPI()
+
+# Allow CORS for your frontend origin
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Replace with your frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
 def get_tree_info(session: SessionDep):
-    info = session.exec(select(TreeInfo))
+    info = session.exec(select(TreeInfo)).all()
     return info
 
 
 # Endpoint that returns the treehistory table
 @app.get("/treehistory")
 def get_tree_history(session: SessionDep):
-    history = session.exec(select(TreeHistory))
+    history = session.exec(select(TreeHistory)).all()
     return history
 
 
