@@ -12,8 +12,8 @@ def main():
     while user_input != "tree":
         user_input = input("ERROR: You did not enter \"tree\" try again.\n")
 
-    tree_history = pd.read_csv("tree_history.csv")
-    tree_info = pd.read_csv("tree_info.csv")
+    tree_history = pd.read_csv("./active_csvs/tree_history.csv")
+    tree_info = pd.read_csv("./active_csvs/tree_info.csv")
 
     # Tries to connect to postgres database on default port if possible
     default_user = Users(username=ADMIN_USERNAME, email=ADMIN_EMAIL, full_name=ADMIN_NAME, hashed_password=pbkdf2_sha256.hash(ADMIN_PASSWORD), data_permissions=True, user_permissions=True)
