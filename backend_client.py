@@ -65,6 +65,11 @@ def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotate
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
+    # Checks if a user with the new username already exists:
+    existing_user = session.exec(select(TreeInfo).where(TreeInfo.tree_id == new_treeinfo.tree_id)).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="Tree ID already exists")
+
     session.add(new_treeinfo)
     session.commit()
     session.refresh(new_treeinfo)
@@ -78,6 +83,11 @@ def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token:
     username = authenticate_token(token)
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
+
+    # Checks if a user with the new username already exists:
+    existing_user = session.exec(select(TreeHistory).where(TreeHistory.hist_id == new_treehistory.hist_id)).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="History ID already exists")
 
     session.add(new_treehistory)
     session.commit()
@@ -184,7 +194,7 @@ def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annota
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    # Checks if a user with the new username already exists and the new username is actually different:
+    # Checks if a user with the new username already exists:
     existing_user = session.exec(select(Users).where(Users.username == new_user_input.username)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Username already exists")
