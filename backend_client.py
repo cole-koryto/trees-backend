@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta, timezone
 from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
 from passlib.hash import pbkdf2_sha256
 from sqlmodel import Session, create_engine, select
 from typing import Annotated
-from fastapi.middleware.cors import CORSMiddleware
 
 from config import *
 from schemas.input_schemas import NewUserInput, ModifyUserInput
@@ -37,7 +37,7 @@ app = FastAPI()
 # Allow CORS for your frontend origin
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Replace with your frontend URL
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -245,7 +245,6 @@ def update_user(input_username: str, modify_user_input: ModifyUserInput, session
     modify_user_input = modify_user_input.model_dump(exclude_unset=True)
     if "password" in modify_user_input:
         modify_user_input["hashed_password"] = pbkdf2_sha256.hash(modify_user_input["password"])
-        # input_user.pop("password")
     target_user.sqlmodel_update(modify_user_input)
 
     # Adds updated instance to table
