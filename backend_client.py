@@ -24,16 +24,6 @@ credentials_exception = HTTPException(
 # configure FastAPI
 app = FastAPI()
 
-# Creates new database session
-def get_session():
-    engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:{LOCAL_DB_PORT}/{LOCAL_DB_NAME}")
-    with Session(engine) as session:
-        yield session
-SessionDep = Annotated[Session, Depends(get_session)]
-
-# configure FastAPI
-app = FastAPI()
-
 # Allow CORS for your frontend origin
 app.add_middleware(
     CORSMiddleware,
@@ -42,6 +32,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Creates new database session
+def get_session():
+    engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:{LOCAL_DB_PORT}/{LOCAL_DB_NAME}")
+    with Session(engine) as session:
+        yield session
+SessionDep = Annotated[Session, Depends(get_session)]
 
 
 # Endpoint that returns the treeinfo table
