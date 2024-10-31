@@ -43,6 +43,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
 def get_tree_info(session: SessionDep):
