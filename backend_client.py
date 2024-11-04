@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, timezone
 from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
@@ -22,6 +23,15 @@ credentials_exception = HTTPException(
 
 # configure FastAPI
 app = FastAPI()
+
+# Allow CORS for your frontend origin
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Creates new database session
 def get_session():
@@ -53,6 +63,11 @@ def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotate
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
+    # Checks if a user with the new username already exists:
+    existing_user = session.exec(select(TreeInfo).where(TreeInfo.tree_id == new_treeinfo.tree_id)).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="Tree ID already exists")
+
     session.add(new_treeinfo)
     session.commit()
     session.refresh(new_treeinfo)
@@ -66,6 +81,11 @@ def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token:
     username = authenticate_token(token)
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
+
+    # Checks if a user with the new username already exists:
+    existing_user = session.exec(select(TreeHistory).where(TreeHistory.hist_id == new_treehistory.hist_id)).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="History ID already exists")
 
     session.add(new_treehistory)
     session.commit()
@@ -119,6 +139,11 @@ def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, t
     if not target_tree:
         raise HTTPException(status_code=404, detail="Tree not found")
 
+    # Checks if a user with the new username already exists and the new username is actually different:
+    existing_user = session.exec(select(TreeInfo).where(TreeInfo.tree_id == new_treeinfo.tree_id)).first()
+    if existing_user and existing_user.tree_id != tree_id:
+        raise HTTPException(status_code=400, detail="Tree ID already exists")
+
     # Cleans new data and updates existing instance
     new_treeinfo = new_treeinfo.model_dump(exclude_unset=True)
     target_tree.sqlmodel_update(new_treeinfo)
@@ -142,6 +167,11 @@ def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: Sess
     target_history = session.get(TreeHistory, hist_id)
     if not target_history:
         raise HTTPException(status_code=404, detail="History not found")
+
+    # Checks if a user with the new username already exists and the new username is actually different:
+    existing_user = session.exec(select(TreeHistory).where(TreeHistory.hist_id == new_treehistory.hist_id)).first()
+    if existing_user and existing_user.hist_id != hist_id:
+        raise HTTPException(status_code=400, detail="History ID already exists")
 
     # Cleans new data and updates existing instance
     new_treehistory = new_treehistory.model_dump(exclude_unset=True)
@@ -176,6 +206,11 @@ def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annota
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
+    # Checks if a user with the new username already exists:
+    existing_user = session.exec(select(Users).where(Users.username == new_user_input.username)).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="Username already exists")
+
     # Creates new user instance based on user input and adds to table
     new_user = Users(username=new_user_input.username, email=new_user_input.email, full_name=new_user_input.full_name, hashed_password=pbkdf2_sha256.hash(new_user_input.password), data_permissions=new_user_input.data_permissions, user_permissions=new_user_input.user_permissions)
     session.add(new_user)
@@ -208,16 +243,20 @@ def update_user(input_username: str, modify_user_input: ModifyUserInput, session
     if not get_user(token_username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    # Gets tree of interest to update
+    # Gets user of interest to update
     target_user = session.get(Users, input_username)
     if not target_user:
         raise HTTPException(status_code=404, detail="User not found")
+
+    # Checks if a user with the new username already exists and the new username is actually different:
+    existing_user = session.exec(select(Users).where(Users.username == modify_user_input.username)).first()
+    if existing_user and existing_user.username != input_username:
+        raise HTTPException(status_code=400, detail="Username already exists")
 
     # Cleans new data and updates existing instance
     modify_user_input = modify_user_input.model_dump(exclude_unset=True)
     if "password" in modify_user_input:
         modify_user_input["hashed_password"] = pbkdf2_sha256.hash(modify_user_input["password"])
-        # input_user.pop("password")
     target_user.sqlmodel_update(modify_user_input)
 
     # Adds updated instance to table
