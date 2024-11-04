@@ -34,14 +34,14 @@ SessionDep = Annotated[Session, Depends(get_session)]
 # Endpoint that returns the treeinfo table
 @app.get("/treeinfo")
 def get_tree_info(session: SessionDep):
-    info = session.exec(select(TreeInfo))
+    info = session.exec(select(TreeInfo)).all()
     return info
 
 
 # Endpoint that returns the treehistory table
 @app.get("/treehistory")
 def get_tree_history(session: SessionDep):
-    history = session.exec(select(TreeHistory))
+    history = session.exec(select(TreeHistory)).all()
     return history
 
 
@@ -153,6 +153,20 @@ def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: Sess
     session.refresh(target_history)
     return target_history
 
+# Gets the list of users
+@app.get("/users")
+def get_user_list(session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
+    # Gets user if possible and checks if user has user permissions
+    username = authenticate_token(token)
+    if not get_user(username, session).user_permissions:
+        raise HTTPException(status_code=403, detail="User does not have user permissions")
+
+    users = session.exec(select(Users.username, Users.full_name)).all()
+    
+    # Format as list of dictionaries
+    user_list = [{"username": user[0], "full_name": user[1]} for user in users]
+    
+    return user_list
 
 # Adds new user to the site
 @app.post("/users/new", response_model=Users)
