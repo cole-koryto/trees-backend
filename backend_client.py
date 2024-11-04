@@ -5,6 +5,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
 from passlib.hash import pbkdf2_sha256
+from sqlalchemy.orm import load_only
 from sqlmodel import Session, create_engine, select
 from typing import Annotated
 
@@ -191,12 +192,11 @@ def get_user_list(session: SessionDep, token: Annotated[str, Depends(oauth2_sche
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    users = session.exec(select(Users.username, Users.full_name)).all()
+    # Selects all users and returns their username and full name
+    users = session.exec(select(Users).options(load_only(Users.username), load_only(Users.email), load_only(Users.full_name), load_only(Users.data_permissions), load_only(Users.user_permissions))).all()
     
-    # Format as list of dictionaries
-    user_list = [{"username": user[0], "full_name": user[1]} for user in users]
-    
-    return user_list
+    return users
+
 
 # Adds new user to the site
 @app.post("/users/new", response_model=Users)
