@@ -163,3 +163,5 @@ cython_debug/
 
 # backups
 backup_csvs/*
+
+.vercel
