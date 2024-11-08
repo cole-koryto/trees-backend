@@ -57,7 +57,7 @@ def get_tree_history(session: SessionDep):
 
 
 # Adds new instance to treeinfo table
-@app.post("/treeinfo/new", response_model=TreeInfo)
+@app.post("/treeinfo/new")
 def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
@@ -71,12 +71,10 @@ def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotate
 
     session.add(new_treeinfo)
     session.commit()
-    session.refresh(new_treeinfo)
-    return new_treeinfo
 
 
 # Adds new instance to treehistory table
-@app.post("/treehistory/new", response_model=TreeHistory)
+@app.post("/treehistory/new")
 def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
@@ -90,8 +88,6 @@ def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token:
 
     session.add(new_treehistory)
     session.commit()
-    session.refresh(new_treehistory)
-    return new_treehistory
 
 
 # Removes an instance from the treeinfo table by tree_id
@@ -128,7 +124,7 @@ def delete_treehistory(hist_id: int, session: SessionDep, token: Annotated[str, 
 
 
 # Endpoint that updates treeinfo table and returns updated instance
-@app.patch("/treeinfo/update/{tree_id}", response_model=TreeInfo)
+@app.patch("/treeinfo/update/{tree_id}")
 def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
@@ -152,12 +148,10 @@ def update_treeinfo(tree_id: int, new_treeinfo: TreeInfo, session: SessionDep, t
     # Adds updated instance to table
     session.add(target_tree)
     session.commit()
-    session.refresh(target_tree)
-    return target_tree
 
 
 # Endpoint that updates treehistory table and returns updated instance
-@app.patch("/treehistory/update/{hist_id}", response_model=TreeHistory)
+@app.patch("/treehistory/update/{hist_id}")
 def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has data modification permissions
     username = authenticate_token(token)
@@ -181,8 +175,7 @@ def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: Sess
     # Adds updated instance to table
     session.add(target_history)
     session.commit()
-    session.refresh(target_history)
-    return target_history
+
 
 # Gets the list of users
 @app.get("/users")
@@ -199,7 +192,7 @@ def get_user_list(session: SessionDep, token: Annotated[str, Depends(oauth2_sche
 
 
 # Adds new user to the site
-@app.post("/users/new", response_model=Users)
+@app.post("/users/new")
 def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has user permissions
     username = authenticate_token(token)
@@ -215,9 +208,6 @@ def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annota
     new_user = Users(username=new_user_input.username, email=new_user_input.email, full_name=new_user_input.full_name, hashed_password=pbkdf2_sha256.hash(new_user_input.password), data_permissions=new_user_input.data_permissions, user_permissions=new_user_input.user_permissions)
     session.add(new_user)
     session.commit()
-    session.refresh(new_user)
-
-    return new_user
 
 
 # Deletes user from the site
@@ -236,7 +226,7 @@ def delete_user(input_username: str, session: SessionDep, token: Annotated[str, 
 
 
 # Endpoint that updates users table and returns updated user instance
-@app.patch("/users/update/{input_username}", response_model=Users)
+@app.patch("/users/update/{input_username}")
 def update_user(input_username: str, modify_user_input: ModifyUserInput, session: SessionDep, token: Annotated[str, Depends(oauth2_scheme)]):
     # Gets user if possible and checks if user has user permissions
     token_username = authenticate_token(token)
@@ -262,8 +252,6 @@ def update_user(input_username: str, modify_user_input: ModifyUserInput, session
     # Adds updated instance to table
     session.add(target_user)
     session.commit()
-    session.refresh(target_user)
-    return target_user
 
 
 # Authenticates that token is real and for valid user, and returns username if true
@@ -293,6 +281,7 @@ def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depen
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     return Token(access_token=access_token, token_type="bearer")
+
 
 # Gets a specified user based off of the given username
 def get_user(username: str, session: SessionDep):
