@@ -1,10 +1,11 @@
+# BEFORE DEPLOYING, BE SURE YOU CREATE NEW CREDENTIALS AND CONFIGS TO ENSURE SECURITY
+
 # Credentials to connect to the local postgres database
 LOCAL_DB_USER = "postgres"
 LOCAL_DB_PASS = "localpost17"
 LOCAL_DB_NAME = "trees"
 LOCAL_DB_PORT = "5432" # should be 5432 or 5433
 
-# TODO move and reset all credentials before final publish
 # Default credentials to store in the user table as the default admin user
 ADMIN_USERNAME = "admin"
 ADMIN_EMAIL = ""
