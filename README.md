@@ -57,3 +57,11 @@ The server setup was based on the "Setting up FastAPI Server Medium Guide.pdf" a
 4. Restart the systemctl daemon : sudo systemctl daemon-reload 
 5. Restart the web-hosting service: sudo systemctl start trees-backend.service 
 6. See the status of your service : sudo systemctl status trees-backend.service
+7. Run sudo apt install nginx
+8. Run sudo nano /etc/nginx/sites-available/trees-backend
+   1. Create file based on nginx-trees file in references    
+9. sudo ln -s /etc/nginx/sites-available/trees-backend /etc/nginx/sitesenabled/
+   1. A symbolic link is created in the /etc/nginx/sitesenabled/ directory. This allows the files to be the same without having to modify both whenever you make a change
+10. Run sudo nginx -t
+11. Run sudo systemctl reload nginx
+ 
