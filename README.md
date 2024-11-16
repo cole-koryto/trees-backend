@@ -52,7 +52,7 @@ Based on guide from: https://medium.com/@guemandeuhassler96/run-your-python-scri
 
 # Server Setup
 The server setup was based on the "Setting up FastAPI Server Medium Guide.pdf" article which provides a very comprehensive guide on how to set up FastAPI application on nginx server. I would highly recommend you read it for further details
-1. Create server and set up a static IP that referees to it
+1. Create server and set up a static IP that refers to it
 2. Follow steps in **Backend Setup** and **Backup Service Setup**
 3. Create a systemd file based on trees-backend.service
    1. e.g. `sudo nano /etc/systemd/system/trees-backend.service`
