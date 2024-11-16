@@ -45,7 +45,9 @@ Based on guide from: https://medium.com/@guemandeuhassler96/run-your-python-scri
 1. Move the most recent .csv backup from `backup_csvs` to `active_csvs` 
 2. Replace existing tree_history.csv and/or tree_info.csv in the active_csvs folder with the csvs from `backup_csvs`
    1. Program cannot run without those EXACT files existing in that EXACT location
-3. Run db_creation.py
+3. **Optional** If you want to restore the users table, Move the most recent .csv backup from `backup_csvs` to `active_csvs`
+   1. Note: You can restore treeinfo and treehistroy without restoring users
+4. Run db_creation.py
    1. **PLEASE NOTE:** Running db_creation.py will also reset the admin user to the information stored in config.py
 
 # Server Setup

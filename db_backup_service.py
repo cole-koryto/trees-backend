@@ -21,6 +21,7 @@ if __name__ == "__main__":
             engine = create_engine(f"postgresql://{LOCAL_DB_USER}:{LOCAL_DB_PASS}@localhost:{LOCAL_DB_PORT}/{LOCAL_DB_NAME}", echo=True)
             pd.read_sql_table("treehistory", engine).to_csv(f"./backup_csvs/{datetime.datetime.now().date()}_treehistory.csv", index=False)
             pd.read_sql_table("treeinfo", engine).to_csv(f"./backup_csvs/{datetime.datetime.now().date()}_treeinfo.csv", index=False)
+            pd.read_sql_table("users", engine).to_csv(f"./backup_csvs/{datetime.datetime.now().date()}_users.csv", index=False)
             print(f"Database successfully backed up on {datetime.datetime.now().date()}")
         except Exception as e:
             print(e)

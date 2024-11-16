@@ -11,7 +11,7 @@ import pandas as pd
 from passlib.hash import pbkdf2_sha256
 import psycopg2
 from schemas.table_schemas import TreeInfo, TreeHistory, Users
-from sqlmodel import SQLModel, create_engine, Session
+from sqlmodel import SQLModel, create_engine, Session, select
 
 from config import *
 
@@ -37,7 +37,18 @@ def main():
     SQLModel.metadata.create_all(engine)
     tree_info.to_sql('treeinfo', engine, if_exists="append", index=False)
     tree_history.to_sql('treehistory', engine, if_exists="append", index=False)
+
+    # Restores from user csv, if there, and resets admin to config.py info
+    if os.path.isfile("./active_csvs/users.csv"):
+        print("users.csv found in /active_csvs restoring users table from csv")
+        users = pd.read_csv("./active_csvs/users.csv")
+        users.to_sql('users', engine, if_exists="append", index=False)
+    else:
+        print("users.csv NOT found in /active_csvs NOT restoring users table from csv")
     with Session(engine) as session:
+        admin_user_check = session.exec(select(Users).where(Users.username == ADMIN_USERNAME)).one_or_none()
+        if admin_user_check:
+            session.delete(admin_user_check)
         session.add(default_user)
         session.commit()
 
