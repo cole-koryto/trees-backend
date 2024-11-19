@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta, timezone
 from fastapi import Depends, FastAPI, HTTPException, status
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from jwt.exceptions import InvalidTokenError
@@ -24,15 +23,6 @@ credentials_exception = HTTPException(
 
 # configure FastAPI
 app = FastAPI()
-
-# Allow CORS for your frontend origin
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Creates new database session
 def get_session():
@@ -101,7 +91,7 @@ def delete_treeinfo(tree_id: int, session: SessionDep, token: Annotated[str, Dep
     target_tree = session.get(TreeInfo, tree_id)
     if not target_tree:
         raise HTTPException(status_code=404, detail="Tree does not exist.")
-    target_history = session.exec(select(TreeHistory).where(TreeHistory.Tree_ID == tree_id))
+    target_history = session.exec(select(TreeHistory).where(TreeHistory.tree_id == tree_id))
     for hist_id in target_history:
         session.delete(hist_id)
     session.delete(target_tree)
