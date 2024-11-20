@@ -54,7 +54,7 @@ def create_treeinfo(new_treeinfo: TreeInfo, session: SessionDep, token: Annotate
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
-    # Checks if a user with the new username already exists:
+    # Checks if a tree with the new tree id already exists
     existing_user = session.exec(select(TreeInfo).where(TreeInfo.tree_id == new_treeinfo.tree_id)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Tree ID already exists")
@@ -71,7 +71,12 @@ def create_treehistory(new_treehistory: TreeHistory, session: SessionDep, token:
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
-    # Checks if a user with the new username already exists:
+    # Checks if the tree id you are trying to associate with exists
+    target_tree = session.get(TreeInfo, new_treehistory.tree_id)
+    if not target_tree:
+        raise HTTPException(status_code=400, detail="Tree ID associated with new history does not exist.")
+
+    # Checks if an observation with the new history id already exists
     existing_user = session.exec(select(TreeHistory).where(TreeHistory.hist_id == new_treehistory.hist_id)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="History ID already exists")
@@ -148,6 +153,11 @@ def update_treehistory(hist_id: int, new_treehistory: TreeHistory, session: Sess
     if not get_user(username, session).data_permissions:
         raise HTTPException(status_code=403, detail="User does not have data permissions")
 
+    # Checks if the tree id you are trying to associate with exists
+    target_tree = session.get(TreeInfo, new_treehistory.tree_id)
+    if not target_tree:
+        raise HTTPException(status_code=400, detail="Tree ID associated with new history does not exist.")
+
     # Gets tree of interest to update
     target_history = session.get(TreeHistory, hist_id)
     if not target_history:
@@ -189,7 +199,7 @@ def create_user(new_user_input: NewUserInput, session: SessionDep, token: Annota
     if not get_user(username, session).user_permissions:
         raise HTTPException(status_code=403, detail="User does not have user permissions")
 
-    # Checks if a user with the new username already exists:
+    # Checks if a user with the new username already exists
     existing_user = session.exec(select(Users).where(Users.username == new_user_input.username)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Username already exists")
