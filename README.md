@@ -35,7 +35,8 @@ WantedBy=multi-user target
 ```
 5. Now reload systemctl utility using `systemctl daemon-reload`
 6. Start service `systemctl start /etc/systemd/system/db_backup.service`
-7. Check status using `systemctl status /etc/systemd/system/db_backup.service`
+7. Enable service `systemctl enable`
+8. Check status using `systemctl status /etc/systemd/system/db_backup.service`
 
 Note: Backup service DOES NOT back up user table information. So this information can be lost.
 
@@ -62,12 +63,12 @@ The server setup was based on the "Setting up FastAPI Server Medium Guide.pdf" a
 7. Purchase domain and modify DNS records as needed
 8. Set up certbot
    1. sudo apt install certbot python3-certbot-nginx
-   2. sudo certbot --nginx -d kampus-tree.info -d [www.]kampus-tree.info
+   2. sudo certbot --nginx -d kampus-tree.info -d www.kampus-tree.info
 10. Run sudo apt install nginx
 11. Run sudo nano /etc/nginx/sites-available/trees-backend
    1. Create file based on nginx-trees file in references    
-11. sudo ln -s /etc/nginx/sites-available/trees-backend /etc/nginx/sitesenabled/
-   1. A symbolic link is created in the /etc/nginx/sitesenabled/ directory. This allows the files to be the same without having to modify both whenever you make a change
+11. sudo ln -s /etc/nginx/sites-available/trees-backend /etc/nginx/sites-enabled/
+   1. A symbolic link is created in the /etc/nginx/sites-enabled/ directory. This allows the files to be the same without having to modify both whenever you make a change
 11. Run sudo nginx -t
 12. Run sudo systemctl reload nginx
  
